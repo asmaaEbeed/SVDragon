@@ -1,0 +1,2708 @@
+{
+    "variables": [],
+    "info": {
+        "name": "samrt POS API",
+        "_postman_id": "4e0b2315-0689-4b10-96a0-acf1d5464322",
+        "description": "",
+        "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.0.0\/collection.json"
+    },
+    "item": [
+        {
+            "name": "Attendance management",
+            "description": "",
+            "item": [
+                {
+                    "name": "Get Attendance",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/get-attendance\/:user_id",
+                            "query": [],
+                            "variable": [
+                                {
+                                    "id": "user_id",
+                                    "key": "user_id",
+                                    "value": "1",
+                                    "description": "id of the user"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Clock In",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/clock-in",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"user_id\": 1,\n    \"clock_in_time\": \"2000-06-13 13:13:00\",\n    \"clock_in_note\": \"provident\",\n    \"ip_address\": \"quae\",\n    \"latitude\": \"sed\",\n    \"longitude\": \"saepe\"\n}"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Clock Out",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/clock-out",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"user_id\": 1,\n    \"clock_out_time\": \"2000-06-13 13:13:00\",\n    \"clock_out_note\": \"consectetur\",\n    \"latitude\": \"mollitia\",\n    \"longitude\": \"cum\"\n}"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "List Holidays",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/holidays",
+                            "query": [
+                                {
+                                    "key": "location_id",
+                                    "value": "sint",
+                                    "description": "id of the location",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "start_date",
+                                    "value": "2020-06-25",
+                                    "description": "format:Y-m-d",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "end_date",
+                                    "value": "2020-06-25",
+                                    "description": "format:Y-m-d",
+                                    "disabled": false
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Brand management",
+            "description": "",
+            "item": [
+                {
+                    "name": "List brands",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/brand",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Get the specified brand",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/brand\/:brand",
+                            "query": [],
+                            "variable": [
+                                {
+                                    "id": "brand",
+                                    "key": "brand",
+                                    "value": "1",
+                                    "description": "comma separated ids of the brands"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Business Location management",
+            "description": "",
+            "item": [
+                {
+                    "name": "List business locations",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/business-location",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Get the specified business location",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/business-location\/:business_location",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "CRM",
+            "description": "",
+            "item": [
+                {
+                    "name": "List Follow ups",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/crm\/follow-ups",
+                            "query": [
+                                {
+                                    "key": "start_date",
+                                    "value": "2020-12-16",
+                                    "description": "format: Y-m-d (Ex: 2020-12-16)",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "end_date",
+                                    "value": "2020-12-16",
+                                    "description": "format: Y-m-d (Ex: 2020-12-16)",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "status",
+                                    "value": "enim",
+                                    "description": "filter the result through status, get status from getFollowUpResources->statuses",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "follow_up_type",
+                                    "value": "aut",
+                                    "description": "filter the result through follow_up_type, get follow_up_type from getFollowUpResources->follow_up_types",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "order_by",
+                                    "value": "start_datetime",
+                                    "description": "Column name to sort the result, Column: start_datetime",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "direction",
+                                    "value": "desc",
+                                    "description": "Direction to sort the result, Required if using 'order_by', direction: desc, asc",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "per_page",
+                                    "value": "10",
+                                    "description": "Total records per page. default: 10, Set -1 for no pagination",
+                                    "disabled": false
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Add follow up",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/crm\/follow-ups",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"title\": \"Meeting with client\",\n    \"contact_id\": 2,\n    \"description\": \"pariatur\",\n    \"schedule_type\": \"qui\",\n    \"user_id\": \"[2,3,5]\",\n    \"notify_before\": 5,\n    \"notify_type\": \"minute\",\n    \"status\": \"open\",\n    \"notify_via\": \"['sms' => 0 ,'mail' => 1]\",\n    \"start_datetime\": \"2021-01-06 13:05:00\",\n    \"end_datetime\": \"2021-01-06 13:05:00\",\n    \"followup_additional_info\": \"['call duration' => '1 hour']\",\n    \"allow_notification\": true\n}"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Get the specified followup",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/crm\/follow-ups\/:follow_up",
+                            "query": [],
+                            "variable": [
+                                {
+                                    "id": "follow_up",
+                                    "key": "follow_up",
+                                    "value": "1%2C2",
+                                    "description": "comma separated ids of the follow_ups"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Update follow up",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/crm\/follow-ups\/:follow_up",
+                            "query": [],
+                            "variable": [
+                                {
+                                    "id": "follow_up",
+                                    "key": "follow_up",
+                                    "value": "20",
+                                    "description": "id of the follow up to be updated"
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"title\": \"Meeting with client\",\n    \"contact_id\": 2,\n    \"description\": \"totam\",\n    \"schedule_type\": \"asperiores\",\n    \"user_id\": \"[2,3,5]\",\n    \"notify_before\": 5,\n    \"notify_type\": \"minute\",\n    \"status\": \"open\",\n    \"notify_via\": \"['sms' => 0 ,'mail' => 1]\",\n    \"followup_additional_info\": \"['call duration' => '1 hour']\",\n    \"start_datetime\": \"2021-01-06 13:05:00\",\n    \"end_datetime\": \"2021-01-06 13:05:00\",\n    \"allow_notification\": true\n}"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Get follow up resources",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/crm\/follow-up-resources",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "List lead",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/crm\/leads",
+                            "query": [
+                                {
+                                    "key": "assigned_to",
+                                    "value": "1%2C2%2C3",
+                                    "description": "comma separated ids of users to whom lead is assigned (Ex: 1,2,3)",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "name",
+                                    "value": "id",
+                                    "description": "Search term for lead name",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "biz_name",
+                                    "value": "dolorem",
+                                    "description": "Search term for lead's business name",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "mobile_num",
+                                    "value": "20",
+                                    "description": "Search term for lead's mobile number",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "contact_id",
+                                    "value": "nisi",
+                                    "description": "Search term for lead's contact_id. Ex(CO0005)",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "order_by",
+                                    "value": "et",
+                                    "description": "Column name to sort the result, Column: name, supplier_business_name",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "direction",
+                                    "value": "desc",
+                                    "description": "Direction to sort the result, Required if using 'order_by', direction: desc, asc",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "per_page",
+                                    "value": "10",
+                                    "description": "Total records per page. default: 10, Set -1 for no pagination",
+                                    "disabled": false
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Save Call Logs",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/crm\/call-logs",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"call_logs\": [\n        {\n            \"mobile_number\": \"repellat\",\n            \"mobile_name\": \"quis\",\n            \"call_type\": \"call\",\n            \"start_time\": \"rerum\",\n            \"end_time\": \"illo\",\n            \"duration\": \"labore\"\n        }\n    ]\n}"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Cash register management",
+            "description": "",
+            "item": [
+                {
+                    "name": "List Cash Registers",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/cash-register",
+                            "query": [
+                                {
+                                    "key": "status",
+                                    "value": "open",
+                                    "description": "status of the register (open, close)",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "user_id",
+                                    "value": "10",
+                                    "description": "id of the user",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "start_date",
+                                    "value": "2018-06-25",
+                                    "description": "format:Y-m-d",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "end_date",
+                                    "value": "2018-06-25",
+                                    "description": "format:Y-m-d",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "location_id",
+                                    "value": "quas",
+                                    "description": "id of the location",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "per_page",
+                                    "value": "15",
+                                    "description": "Total records per page. default: 10, Set -1 for no pagination",
+                                    "disabled": false
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Create Cash Register",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/cash-register",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"location_id\": 6,\n    \"initial_amount\": 56664030,\n    \"created_at\": \"2020-5-7 15:20:22\",\n    \"closed_at\": \"2020-5-7 15:20:22\",\n    \"status\": \"close\",\n    \"closing_amount\": 434863.327005742,\n    \"total_card_slips\": 18,\n    \"total_cheques\": 8,\n    \"closing_note\": \"aliquid\",\n    \"transaction_ids\": \"1,2,3\"\n}"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Get the specified Register",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/cash-register\/:cash_register",
+                            "query": [],
+                            "variable": [
+                                {
+                                    "id": "cash_register",
+                                    "key": "cash_register",
+                                    "value": "59",
+                                    "description": "comma separated ids of the cash registers"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Contact management",
+            "description": "",
+            "item": [
+                {
+                    "name": "List contact",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/contactapi",
+                            "query": [
+                                {
+                                    "key": "type",
+                                    "value": "quis",
+                                    "description": "Type of contact (supplier, customer)",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "name",
+                                    "value": "delectus",
+                                    "description": "Search term for contact name",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "biz_name",
+                                    "value": "voluptatem",
+                                    "description": "Search term for contact's business name",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "mobile_num",
+                                    "value": "10",
+                                    "description": "Search term for contact's mobile number",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "contact_id",
+                                    "value": "cupiditate",
+                                    "description": "Search term for contact's contact_id. Ex(CO0005)",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "order_by",
+                                    "value": "velit",
+                                    "description": "Column name to sort the result, Column: name, supplier_business_name",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "direction",
+                                    "value": "maxime",
+                                    "description": "Direction to sort the result, Direction: desc, asc",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "per_page",
+                                    "value": "10",
+                                    "description": "Total records per page. default: 10, Set -1 for no pagination",
+                                    "disabled": false
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Create contact",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/contactapi",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"type\": \"customer\",\n    \"supplier_business_name\": \"culpa\",\n    \"prefix\": \"veniam\",\n    \"first_name\": \"et\",\n    \"middle_name\": \"voluptatem\",\n    \"last_name\": \"velit\",\n    \"tax_number\": \"8787fefef\",\n    \"pay_term_number\": 3,\n    \"pay_term_type\": \"months\",\n    \"mobile\": \"4578691009\",\n    \"landline\": \"5487-8454-4145\",\n    \"alternate_number\": \"841847541222\",\n    \"address_line_1\": \"quas\",\n    \"address_line_2\": \"vero\",\n    \"city\": \"necessitatibus\",\n    \"state\": \"rerum\",\n    \"country\": \"voluptatem\",\n    \"zip_code\": \"quaerat\",\n    \"customer_group_id\": \"maiores\",\n    \"contact_id\": \"dicta\",\n    \"dob\": \"2000-06-13\",\n    \"custom_field1\": \"aliquam\",\n    \"custom_field2\": \"consequatur\",\n    \"custom_field3\": \"quaerat\",\n    \"custom_field4\": \"rerum\",\n    \"email\": \"quis\",\n    \"shipping_address\": \"eos\",\n    \"position\": \"sunt\",\n    \"opening_balance\": 0,\n    \"source_id\": 6,\n    \"life_stage_id\": 15,\n    \"assigned_to\": []\n}"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Get the specified contact",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/contactapi\/:contactapi",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Update contact",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/contactapi\/:contactapi",
+                            "query": []
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"type\": \"customer\",\n    \"supplier_business_name\": \"dolorem\",\n    \"prefix\": \"aut\",\n    \"first_name\": \"hic\",\n    \"middle_name\": \"dolores\",\n    \"last_name\": \"aut\",\n    \"tax_number\": \"488744dwd\",\n    \"pay_term_number\": 3,\n    \"pay_term_type\": \"months\",\n    \"mobile\": \"8795461009\",\n    \"landline\": \"65484-848-848\",\n    \"alternate_number\": \"9898795220\",\n    \"address_line_1\": \"dolores\",\n    \"address_line_2\": \"molestias\",\n    \"city\": \"aut\",\n    \"state\": \"velit\",\n    \"country\": \"qui\",\n    \"zip_code\": \"aut\",\n    \"customer_group_id\": \"quia\",\n    \"contact_id\": \"repellat\",\n    \"dob\": \"2000-06-13\",\n    \"custom_field1\": \"rerum\",\n    \"custom_field2\": \"consequuntur\",\n    \"custom_field3\": \"et\",\n    \"custom_field4\": \"enim\",\n    \"email\": \"quis\",\n    \"shipping_address\": \"impedit\",\n    \"position\": \"qui\",\n    \"opening_balance\": 10.3,\n    \"source_id\": 4,\n    \"life_stage_id\": 5,\n    \"assigned_to\": []\n}"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Contact payment",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/contactapi-payment",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"contact_id\": 17,\n    \"amount\": 453.13,\n    \"method\": \"cash\",\n    \"paid_on\": \"2020-07-22 15:48:29\",\n    \"account_id\": 11,\n    \"card_number\": \"beatae\",\n    \"card_holder_name\": \"aut\",\n    \"card_transaction_number\": \"blanditiis\",\n    \"card_type\": \"corrupti\",\n    \"card_month\": \"vel\",\n    \"card_year\": \"omnis\",\n    \"card_security\": \"est\",\n    \"transaction_no_1\": \"consequatur\",\n    \"transaction_no_2\": \"deleniti\",\n    \"transaction_no_3\": \"non\",\n    \"cheque_number\": \"qui\",\n    \"bank_account_number\": \"error\",\n    \"note\": \"eum\"\n}"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Expense management",
+            "description": "",
+            "item": [
+                {
+                    "name": "List expenses",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/expense",
+                            "query": [
+                                {
+                                    "key": "location_id",
+                                    "value": "nihil",
+                                    "description": "id of the location",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "payment_status",
+                                    "value": "paid",
+                                    "description": "payment status",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "start_date",
+                                    "value": "2018-06-25",
+                                    "description": "format:Y-m-d",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "end_date",
+                                    "value": "2018-06-25",
+                                    "description": "format:Y-m-d",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "expense_for",
+                                    "value": "harum",
+                                    "description": "id of the user for which expense is created",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "per_page",
+                                    "value": "15",
+                                    "description": "Total records per page. default: 10, Set -1 for no pagination",
+                                    "disabled": false
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Create expense \/ expense refund",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/expense",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"location_id\": 20,\n    \"final_total\": 0.97,\n    \"transaction_date\": \"2020-5-7 15:20:22\",\n    \"tax_rate_id\": 19,\n    \"expense_for\": 11,\n    \"contact_id\": 6,\n    \"additional_notes\": \"ut\",\n    \"is_refund\": 0,\n    \"is_recurring\": 0,\n    \"recur_interval\": 17,\n    \"recur_interval_type\": \"months\",\n    \"subscription_repeat_on\": 15,\n    \"subscription_no\": \"amet\",\n    \"recur_repetitions\": 16,\n    \"payment\": [\n        {\n            \"amount\": 453.13,\n            \"method\": \"cash\",\n            \"account_id\": 2,\n            \"card_number\": \"qui\",\n            \"card_holder_name\": \"ipsum\",\n            \"card_transaction_number\": \"aspernatur\",\n            \"card_type\": \"aliquid\",\n            \"card_month\": \"qui\",\n            \"card_year\": \"est\",\n            \"card_security\": \"inventore\",\n            \"transaction_no_1\": \"iste\",\n            \"transaction_no_2\": \"earum\",\n            \"transaction_no_3\": \"illum\",\n            \"note\": \"quisquam\",\n            \"cheque_number\": \"non\"\n        }\n    ]\n}"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Get the specified expense \/ expense refund",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/expense\/:expense",
+                            "query": [],
+                            "variable": [
+                                {
+                                    "id": "expense",
+                                    "key": "expense",
+                                    "value": "59",
+                                    "description": "comma separated ids of the expenses"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Update expense \/ expense refund",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/expense\/:expense",
+                            "query": []
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"final_total\": 8278.7,\n    \"transaction_date\": \"2020-5-7 15:20:22\",\n    \"tax_rate_id\": 2,\n    \"expense_for\": 19,\n    \"contact_id\": 11,\n    \"additional_notes\": \"laborum\",\n    \"is_recurring\": 0,\n    \"recur_interval\": 10,\n    \"recur_interval_type\": \"months\",\n    \"subscription_repeat_on\": 15,\n    \"subscription_no\": \"hic\",\n    \"recur_repetitions\": 16,\n    \"payment\": []\n}"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "List expense refunds",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/expense-refund",
+                            "query": [
+                                {
+                                    "key": "location_id",
+                                    "value": "ducimus",
+                                    "description": "id of the location",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "payment_status",
+                                    "value": "paid",
+                                    "description": "payment status",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "start_date",
+                                    "value": "2018-06-25",
+                                    "description": "format:Y-m-d",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "end_date",
+                                    "value": "2018-06-25",
+                                    "description": "format:Y-m-d",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "expense_for",
+                                    "value": "itaque",
+                                    "description": "id of the user for which expense is created",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "per_page",
+                                    "value": "15",
+                                    "description": "Total records per page. default: 10, Set -1 for no pagination",
+                                    "disabled": false
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Product management",
+            "description": "",
+            "item": [
+                {
+                    "name": "List products",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/product",
+                            "query": [
+                                {
+                                    "key": "brand_id",
+                                    "value": "accusantium",
+                                    "description": "",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "category_id",
+                                    "value": "veniam",
+                                    "description": "",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "sub_category_id",
+                                    "value": "neque",
+                                    "description": "",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "location_id",
+                                    "value": "itaque",
+                                    "description": "",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "selling_price_group",
+                                    "value": "ut",
+                                    "description": "(1, 0)",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "name",
+                                    "value": "culpa",
+                                    "description": "Search term for product name",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "sku",
+                                    "value": "necessitatibus",
+                                    "description": "Search term for product sku",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "per_page",
+                                    "value": "10",
+                                    "description": "Total records per page. default: 10, Set -1 for no pagination",
+                                    "disabled": false
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Get the specified product",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/product\/:product",
+                            "query": [
+                                {
+                                    "key": "selling_price_group",
+                                    "value": "soluta",
+                                    "description": "(1, 0)",
+                                    "disabled": false
+                                }
+                            ],
+                            "variable": [
+                                {
+                                    "id": "product",
+                                    "key": "product",
+                                    "value": "1",
+                                    "description": "comma separated ids of products"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "List Selling Price Group",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/selling-price-group",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "List Variations",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/variation\/:id",
+                            "query": [
+                                {
+                                    "key": "brand_id",
+                                    "value": "omnis",
+                                    "description": "",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "category_id",
+                                    "value": "ab",
+                                    "description": "",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "sub_category_id",
+                                    "value": "consequatur",
+                                    "description": "",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "not_for_selling",
+                                    "value": "iste",
+                                    "description": "Values: 0 or 1",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "name",
+                                    "value": "omnis",
+                                    "description": "Search term for product name",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "sku",
+                                    "value": "itaque",
+                                    "description": "Search term for product sku",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "per_page",
+                                    "value": "10",
+                                    "description": "Total records per page. default: 10, Set -1 for no pagination",
+                                    "disabled": false
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Sales management",
+            "description": "",
+            "item": [
+                {
+                    "name": "List sells",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/sell",
+                            "query": [
+                                {
+                                    "key": "location_id",
+                                    "value": "nisi",
+                                    "description": "id of the location",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "contact_id",
+                                    "value": "modi",
+                                    "description": "id of the customer",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "payment_status",
+                                    "value": "paid",
+                                    "description": "payment status",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "start_date",
+                                    "value": "2018-06-25",
+                                    "description": "format:Y-m-d",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "end_date",
+                                    "value": "2018-06-25",
+                                    "description": "format:Y-m-d",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "user_id",
+                                    "value": "quis",
+                                    "description": "id of the user who created the sale",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "service_staff_id",
+                                    "value": "nostrum",
+                                    "description": "id of the service staff assigned with the sale",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "shipping_status",
+                                    "value": "ordered",
+                                    "description": "Shipping Status of the sale ('ordered', 'packed', 'shipped', 'delivered', 'cancelled')",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "only_subscriptions",
+                                    "value": "consequuntur",
+                                    "description": "Filter only subcription invoices (1, 0)",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "order_by_date",
+                                    "value": "desc",
+                                    "description": "Sort sell list by date ('asc', 'desc')",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "per_page",
+                                    "value": "10",
+                                    "description": "Total records per page. default: 10, Set -1 for no pagination",
+                                    "disabled": false
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Create sell",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/sell",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"sells\": [\n        {\n            \"location_id\": 12,\n            \"contact_id\": 20,\n            \"transaction_date\": \"2020-07-22 15:48:29\",\n            \"invoice_no\": \"consequatur\",\n            \"status\": \"final\",\n            \"sub_status\": \"null\",\n            \"is_quotation\": true,\n            \"tax_rate_id\": 8,\n            \"discount_amount\": 10,\n            \"discount_type\": \"fixed\",\n            \"sale_note\": \"consequatur\",\n            \"staff_note\": \"doloremque\",\n            \"commission_agent\": 5,\n            \"shipping_details\": \"Express Delivery\",\n            \"shipping_address\": \"et\",\n            \"shipping_status\": \"ordered\",\n            \"delivered_to\": \"'Mr robin'\",\n            \"shipping_charges\": 10,\n            \"packing_charge\": 10,\n            \"exchange_rate\": 1,\n            \"selling_price_group_id\": 3,\n            \"pay_term_number\": 3,\n            \"pay_term_type\": \"months\",\n            \"is_suspend\": false,\n            \"is_recurring\": 0,\n            \"recur_interval\": 1,\n            \"recur_interval_type\": \"months\",\n            \"subscription_repeat_on\": 15,\n            \"subscription_no\": \"veniam\",\n            \"recur_repetitions\": 17,\n            \"rp_redeemed\": 9,\n            \"rp_redeemed_amount\": 13.5,\n            \"types_of_service_id\": 3,\n            \"service_custom_field_1\": \"vel\",\n            \"service_custom_field_2\": \"aut\",\n            \"service_custom_field_3\": \"dolor\",\n            \"service_custom_field_4\": \"consequatur\",\n            \"round_off_amount\": 2.380853906,\n            \"table_id\": 1,\n            \"service_staff_id\": 15,\n            \"change_return\": 0,\n            \"products\": [\n                {\n                    \"product_id\": 17,\n                    \"variation_id\": 58,\n                    \"quantity\": 1,\n                    \"unit_price\": 437.5,\n                    \"tax_rate_id\": 0,\n                    \"discount_amount\": 0,\n                    \"discount_type\": \"percentage\",\n                    \"sub_unit_id\": 20,\n                    \"note\": \"nisi\"\n                }\n            ],\n            \"payments\": [\n                {\n                    \"amount\": 453.13,\n                    \"method\": \"cash\",\n                    \"account_id\": 8,\n                    \"card_number\": \"labore\",\n                    \"card_holder_name\": \"dolor\",\n                    \"card_transaction_number\": \"numquam\",\n                    \"card_type\": \"ut\",\n                    \"card_month\": \"accusamus\",\n                    \"card_year\": \"praesentium\",\n                    \"card_security\": \"fuga\",\n                    \"transaction_no_1\": \"sapiente\",\n                    \"transaction_no_2\": \"libero\",\n                    \"transaction_no_3\": \"labore\",\n                    \"bank_account_number\": \"assumenda\",\n                    \"note\": \"voluptate\",\n                    \"cheque_number\": \"sit\"\n                }\n            ]\n        }\n    ]\n}"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Get the specified sell",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/sell\/:sell",
+                            "query": [],
+                            "variable": [
+                                {
+                                    "id": "sell",
+                                    "key": "sell",
+                                    "value": "55",
+                                    "description": "comma separated ids of the sells"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Update sell",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/sell\/:sell",
+                            "query": [],
+                            "variable": [
+                                {
+                                    "id": "sell",
+                                    "key": "sell",
+                                    "value": "6",
+                                    "description": "id of sell to update"
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"contact_id\": 20,\n    \"transaction_date\": \"2020-5-7 15:20:22\",\n    \"status\": \"final\",\n    \"sub_status\": \"null\",\n    \"is_quotation\": true,\n    \"tax_rate_id\": 16,\n    \"discount_amount\": 10,\n    \"discount_type\": \"fixed\",\n    \"sale_note\": \"ducimus\",\n    \"staff_note\": \"enim\",\n    \"sells\": [\n        {\n            \"is_suspend\": false\n        }\n    ],\n    \"commission_agent\": 9,\n    \"shipping_details\": \"Express Delivery\",\n    \"shipping_address\": \"quo\",\n    \"shipping_status\": \"ordered\",\n    \"delivered_to\": \"Mr Robin\",\n    \"shipping_charges\": 10,\n    \"packing_charge\": 10,\n    \"exchange_rate\": 1,\n    \"selling_price_group_id\": 12,\n    \"pay_term_number\": 2,\n    \"pay_term_type\": \"months\",\n    \"is_recurring\": 0,\n    \"recur_interval\": 18,\n    \"recur_interval_type\": \"days\",\n    \"subscription_repeat_on\": 7,\n    \"subscription_no\": \"vel\",\n    \"recur_repetitions\": 3,\n    \"rp_redeemed\": 16,\n    \"rp_redeemed_amount\": 13.5,\n    \"types_of_service_id\": 6,\n    \"service_custom_field_1\": \"et\",\n    \"service_custom_field_2\": \"maiores\",\n    \"service_custom_field_3\": \"vitae\",\n    \"service_custom_field_4\": \"ducimus\",\n    \"round_off_amount\": 222.90419,\n    \"table_id\": 19,\n    \"service_staff_id\": 14,\n    \"change_return\": 0,\n    \"change_return_id\": 13,\n    \"products\": [\n        {\n            \"sell_line_id\": 18,\n            \"product_id\": 17,\n            \"variation_id\": 58,\n            \"quantity\": 1,\n            \"unit_price\": 437.5,\n            \"tax_rate_id\": 3,\n            \"discount_amount\": 0,\n            \"discount_type\": \"percentage\",\n            \"sub_unit_id\": 19,\n            \"note\": \"eum\"\n        }\n    ],\n    \"payments\": [\n        {\n            \"payment_id\": 18,\n            \"amount\": 453.13,\n            \"method\": \"cash\",\n            \"account_id\": 14,\n            \"card_number\": \"ut\",\n            \"card_holder_name\": \"ut\",\n            \"card_transaction_number\": \"optio\",\n            \"card_type\": \"ullam\",\n            \"card_month\": \"sequi\",\n            \"card_year\": \"dolorum\",\n            \"card_security\": \"doloremque\",\n            \"transaction_no_1\": \"harum\",\n            \"transaction_no_2\": \"non\",\n            \"transaction_no_3\": \"libero\",\n            \"note\": \"quod\",\n            \"cheque_number\": \"quisquam\",\n            \"bank_account_number\": \"hic\"\n        }\n    ]\n}"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Delete Sell",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/sell\/:sell",
+                            "query": [],
+                            "variable": [
+                                {
+                                    "id": "sell",
+                                    "key": "sell",
+                                    "value": "aut",
+                                    "description": "id of the sell to be deleted"
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Add Sell Return",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/sell-return",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"transaction_id\": 17,\n    \"transaction_date\": \"2020-5-7 15:20:22\",\n    \"invoice_no\": \"sit\",\n    \"discount_amount\": 10,\n    \"discount_type\": \"fixed\",\n    \"products\": [\n        {\n            \"sell_line_id\": 6,\n            \"quantity\": 1,\n            \"unit_price_inc_tax\": 437.5\n        }\n    ]\n}"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "List Sell Return",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/list-sell-return",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Update shipping status",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/update-shipping-status",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"id\": 18,\n    \"shipping_status\": \"ordered\",\n    \"delivered_to\": \"est\"\n}"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Superadmin",
+            "description": "",
+            "item": [
+                {
+                    "name": "If SaaS installed get active subscription details, else return the enabled modules details in package_details",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/active-subscription",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Get Superadmin Package List",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/packages",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Table management",
+            "description": "",
+            "item": [
+                {
+                    "name": "List tables",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/table",
+                            "query": [
+                                {
+                                    "key": "location_id",
+                                    "value": "doloremque",
+                                    "description": "int id of the location",
+                                    "disabled": false
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Show the specified table",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/table\/:table",
+                            "query": [],
+                            "variable": [
+                                {
+                                    "id": "table",
+                                    "key": "table",
+                                    "value": "5",
+                                    "description": "comma separated ids of required tables"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Tax management",
+            "description": "",
+            "item": [
+                {
+                    "name": "List taxes",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/tax",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Get the specified tax",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/tax\/:tax",
+                            "query": [],
+                            "variable": [
+                                {
+                                    "id": "tax",
+                                    "key": "tax",
+                                    "value": "1",
+                                    "description": "comma separated ids of required taxes"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Taxonomy management",
+            "description": "",
+            "item": [
+                {
+                    "name": "List taxonomy",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/taxonomy",
+                            "query": [
+                                {
+                                    "key": "type",
+                                    "value": "fuga",
+                                    "description": "Type of taxonomy (product, device, hrm_department)",
+                                    "disabled": false
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Get the specified taxonomy",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/taxonomy\/:taxonomy",
+                            "query": [],
+                            "variable": [
+                                {
+                                    "id": "taxonomy",
+                                    "key": "taxonomy",
+                                    "value": "1",
+                                    "description": "comma separated ids of product categories"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Types of service management",
+            "description": "",
+            "item": [
+                {
+                    "name": "List types of service",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/types-of-service",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Get the specified types of service",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/types-of-service\/:types_of_service",
+                            "query": [],
+                            "variable": [
+                                {
+                                    "id": "types_of_service",
+                                    "key": "types_of_service",
+                                    "value": "1",
+                                    "description": "comma separated ids of required types of services"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Unit management",
+            "description": "",
+            "item": [
+                {
+                    "name": "List units",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/unit",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Get the specified unit",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/unit\/:unit",
+                            "query": [],
+                            "variable": [
+                                {
+                                    "id": "unit",
+                                    "key": "unit",
+                                    "value": "1",
+                                    "description": "comma separated ids of the units"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "User management",
+            "description": "",
+            "item": [
+                {
+                    "name": "Get the loggedin user details.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/user\/loggedin",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "List users",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/user",
+                            "query": [
+                                {
+                                    "key": "service_staff",
+                                    "value": "quam",
+                                    "description": "boolean Filter service staffs from users list (0, 1)",
+                                    "disabled": false
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Get the specified user",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/user\/:user",
+                            "query": [],
+                            "variable": [
+                                {
+                                    "id": "user",
+                                    "key": "user",
+                                    "value": "1",
+                                    "description": "comma separated ids of the required users"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Update user password.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/update-password",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"current_password\": \"id\",\n    \"new_password\": \"assumenda\"\n}"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "general",
+            "description": "",
+            "item": [
+                {
+                    "name": "List payment accounts",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/payment-accounts",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "List payment methods",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/payment-methods",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Get business details",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/business-details",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Get profit and loss report",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/profit-loss-report",
+                            "query": [
+                                {
+                                    "key": "location_id",
+                                    "value": "tempore",
+                                    "description": "optional id of the location",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "start_date",
+                                    "value": "2018-06-25",
+                                    "description": "optional format:Y-m-d",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "end_date",
+                                    "value": "2018-06-25",
+                                    "description": "optional format:Y-m-d",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "user_id",
+                                    "value": "illo",
+                                    "description": "optional id of the user",
+                                    "disabled": false
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Get product current stock",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/product-stock-report",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Get notifications",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/UltimatePOS\/public",
+                            "path": "connector\/api\/notifications",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                }
+            ]
+        }
+    ]
+}

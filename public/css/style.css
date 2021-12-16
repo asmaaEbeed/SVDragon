@@ -1,0 +1,356 @@
+/**POS Page Style**/
+/*try push*/
+*{
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+/* @font-face kit by Fonts2u (https://fonts2u.com) */ 
+@font-face {
+    font-family:"Open Sans Semibold";
+    src:url("fonts/OpenSans-Semibold.eot?") format("eot"),
+    url("fonts/OpenSans-Semibold.woff") format("woff"),
+    url("fonts/OpenSans-Semibold.ttf") format("truetype"),
+    url("fonts/OpenSans-Semibold.svg#OpenSans-Semibold") format("svg");font-weight:normal;font-style:normal;
+}
+@font-face {
+    font-family:"Open Sans Extrabold";
+    src:url("fonts/OpenSans-ExtraBold.eot?") format("eot"),
+    url("fonts/OpenSans-ExtraBold.woff") format("woff"),
+    url("fonts/OpenSans-ExtraBold.ttf") format("truetype"),
+    url("fonts/OpenSans-ExtraBold.svg#OpenSans-Extrabold") format("svg");font-weight:normal;font-style:normal;
+}
+@font-face {
+    font-family:"Open Sans";
+    src:url("fonts/OpenSans-Regular.eot?") format("eot"),
+    url("fonts/OpenSans-Regular.woff") format("woff"),
+    url("fonts/OpenSans-Regular.ttf") format("truetype"),
+    url("fonts/OpenSans-Regular.svg#OpenSans") format("svg");
+    font-weight:normal;
+    font-style:normal;
+}
+/***views\layouts\app.blade.php***/
+.m-t-5{
+    margin: 5px 0 0 0;
+}
+.main-container{
+    background: #d2d6df;
+    display: flex;
+    max-width: 1024px;
+    justify-content: center;
+    margin: 0 auto;
+    overflow: auto;
+    border: 3px solid #0fa8ba;
+}
+.pos-wrapper{
+    background-color: #fff;
+}
+.pos-data-area{
+    width: calc(100% - 105px);
+}
+/***views\layouts\partials\vertical-pos-panel.blade.php***/
+.left-icons{
+    width: 105px;
+    border-right: 3px solid #0fa8ba;
+}
+.logo-responsive{
+    width: 65%;
+}
+.logo {
+    background-color: #fff;
+    padding: 9px 4px;
+    text-align: center;
+    border-bottom: 3px solid #0fa8ba;
+}
+.left-control-icons{
+    padding: 5px;
+}
+
+.control-icons{
+    height: 70px;
+    width: 95%;
+    color: #fff;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 4px 1px;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+    white-space: normal;
+}
+.control-icons i{
+    font-size: 20px;
+}
+.control-icons p {
+    letter-spacing: 0.5px;
+    font-size: 11px;
+}
+.control-icons.btn:hover, .control-icons.btn:focus{
+    color: #fff
+}
+.cyan-btn, .cyan-bg {
+    background-color: #0fa8ba;
+}
+.purple-btn{
+    background-color: #605ca6;
+}
+.purple-btn:hover{
+    background-color: #5b57a0;
+}
+.cyan-btn:hover {
+    background-color: #0b9fb1;
+}
+.fa-icon-border{
+    border: 2px solid #fff;
+    padding: 2px;
+    border-radius: 4px;
+}
+/**header-pos.blade.php**/
+.user-login b{
+    line-height: 1.4;
+}
+.float-right{
+    float: right;
+}
+.user-img{
+    border: 1px solid #000;
+    max-height: 42px;
+}
+.pos-header-station, .pos-header-location{
+    padding-top: 0.5%
+}
+.pos-header{
+    padding: 3px;
+    border-bottom: 3px solid #0fa8ba;
+}
+.pos-header__clock{
+    font-size: 19px;
+    font-weight: 700;
+    color: #000;
+    line-height: 1;
+}
+/*pos_form.blade.php*/
+.table.pos-table td, .table.pos-table th{
+    padding: 4px 2px !important;
+    font-size: 13px;
+}
+
+.table.pos-table .pos-table-thead {
+    border-bottom: 1px solid #828282;
+}
+.table.pos-table .pos-table-thead th {
+    border-bottom: 0 solid transparent;
+}
+.table.pos-table tr{
+    border-bottom: 1px dashed #828282;
+    border-top: 0 solid transparent !important;
+}
+.table.pos-table td{
+    border-top: 0 solid transparent !important;
+}
+.table .pos-table-qty{
+    width: 18%
+}
+.table .pos-table-unit{
+    width: 23%
+}
+/**views\sale_pos\create.blade.php**/
+.pos-selected-prod-all-area{
+    border-right: 3px solid #0fa8ba;
+}
+/**views\sale_pos\product_row**/
+.pos-table-product-col{
+    width: 25%
+}
+.inc-dec-btn{
+    padding: 1px 2px !important
+}
+.inc-dec-btn i{
+    font-size: 13px;
+}
+.input_quantity, .pos-subtotal{
+    padding: 2px 2px !important;
+    font-size: 13px;
+    text-align: center;
+    height: auto;
+}
+.pos-unit-col{
+    padding: 3px 2px !important;
+    height: auto !important;
+}
+.pos-table-remove-prod{
+    padding: 0 5px;
+}
+/*views\sale_pos\partials\pos_numbers_keyboard*/
+.border-bottom {
+    border-bottom: 3px solid #0fa8ba;
+}
+
+.padding-5 {
+    padding: 5px;
+}
+
+
+.calc-parent{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    height: 100%;
+    text-align: center;
+    column-gap: 5px;
+}
+.calc-left-controls{
+    display: grid;
+    grid-template-rows: repeat(auto);
+    row-gap: 5px;
+}
+.calc-left-controls__item{
+    color: #fff;
+    padding: 5px;
+}
+.calc-left-controls__item i{
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+.calc-left-controls button{
+    cursor: pointer;
+}
+.calc-left-controls button:hover{
+    color: #fff;
+    box-shadow: 1px 1px 3px #4a4a4a inset;
+}
+.calc-left-controls p, .calc-save p{
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 15px;
+    margin: 0 0 8px;
+}
+.calc-num-control .calc-number{
+    /* font-family: "Open Sans Semibold"; */
+    font-weight: 900;
+}
+.calc-numbers{
+    display: grid;
+    /* margin: 0 0 0 10px; */
+    row-gap: 5px;
+}
+.num{
+    font-family: "Open Sans Extrabold";
+}
+.calc-numbers button.calc-number{
+    color: #fff;
+    cursor: pointer;
+    line-height: 1.3;
+}
+.calc-numbers button:hover{
+    color: #fff;
+    box-shadow: 1px 1px 3px #858585 inset;
+}
+.calc-number-row{
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    row-gap: 5px;
+   
+}
+.calc-number{
+    color: #14a6b9 !important;
+    background-color: #bdd3e0;
+    font-size: 27px;
+}
+
+
+
+.calc-number-column{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    column-gap: 5px;
+}
+.calc-number.green-btn {
+    color: #fff !important
+}
+.gray-txt{
+    color: #828282 !important
+}
+.calc-save{
+    display: grid;
+    grid-template-columns: 30% 69%;
+    column-gap: 1%;
+}
+.calc-save button{
+    display: block;
+}
+.gray-btn {
+    background-color: #828282;
+}
+.full-width{
+    width: 100%;
+}
+.calc-number.btn-success{
+    background: #2dce89;
+    border-color: #28b97b;
+    color: #fff !important;
+}
+.pos-footer b{
+    color: #ddd
+}
+.footer-scratsh-line{
+    width: 100%;
+    display: block;
+}
+/*pos_form_actions.blade.php*/
+.pos-form-actions{
+    background-color: transparent;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.p-15{
+    padding: 15px;
+}
+.gray-border-top{
+    border-top: 1px solid #e5e5e5;
+}
+@media(max-width: 991px){
+    .table .pos-table-qty{
+        width: auto
+    }
+    .table .pos-table-unit{
+        width: auto
+    }
+    /**views\sale_pos\product_row**/
+    .pos-table-product-col{
+        width: auto
+    }
+    .pos-selected-prod-all-area{
+        border-right: 0 solid transparent;
+    }
+}
+@media(max-width: 610px){
+    .left-icons{
+        width: 20%;
+    }
+    .pos-data-area{
+        width: calc(100% - 20%);
+    }
+    .left-control-icons{
+        padding: 2px;
+    }
+    .control-icons p {
+        letter-spacing: 0;
+        font-size: 10px;
+    }
+    .calc-left-controls p, .calc-save p {
+        letter-spacing: 0.8px;
+        font-weight: 600;
+        font-size: 11px;
+        margin: 0 0 5px;
+    }
+    .calc-left-controls__item i {
+        font-size: 17px;
+        margin-bottom: 4px;
+    }
+    .calc-left-controls__item {
+        padding: 3px;
+    }
+    .calc-number {
+        font-size: 20px;
+    }
+}

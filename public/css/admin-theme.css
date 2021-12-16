@@ -1,0 +1,59 @@
+/****Used in views\layouts\partials\css.blade.php******/
+.skin-purple .content-wrapper .content-header-custom, .skin-purple-light .content-wrapper .content-header-custom{
+    background: #aeded9 !important;
+}
+.skin-purple .main-header .navbar, .skin-purple-light .main-header .navbar {
+    background-color: #ede6db !important;
+}
+.skin-purple .main-header .navbar .nav>li>a {
+    color: #383838;
+}
+.header-date strong{
+    color: #383838;
+}
+.skin-purple .main-header .navbar .sidebar-toggle:hover{
+    background: rgba(0,0,0,.1);
+    color: #fff;
+}
+.skin-purple .main-header .logo, .skin-purple-light .main-header .logo {
+    background: #ede6db;
+}
+.skin-purple .main-header .logo:hover, .skin-purple-light .main-header .logo:hover {
+    background: rgb(213 207 197);
+    color: #f6f6f6 !important;
+}
+.skin-purple .main-header .logo {
+    color: #383838;
+}
+.skin-black .main-sidebar, .skin-blue .main-sidebar, .skin-green .main-sidebar, .skin-purple .main-sidebar, .skin-red .main-sidebar, .skin-yellow .main-sidebar{
+    background: #ede6db!important;
+    border-right: 0!important;
+}
+
+.skin-black .sidebar-menu>li.active>a, .skin-black .sidebar-menu>li.menu-open>a, .skin-black .sidebar-menu>li:hover>a, .skin-blue .sidebar-menu>li.active>a, .skin-blue .sidebar-menu>li.menu-open>a, .skin-blue .sidebar-menu>li:hover>a, .skin-green .sidebar-menu>li.active>a, .skin-green .sidebar-menu>li.menu-open>a, .skin-green .sidebar-menu>li:hover>a, .skin-purple .sidebar-menu>li.active>a, .skin-purple .sidebar-menu>li.menu-open>a, .skin-purple .sidebar-menu>li:hover>a, .skin-red .sidebar-menu>li.active>a, .skin-red .sidebar-menu>li.menu-open>a, .skin-red .sidebar-menu>li:hover>a, .skin-yellow .sidebar-menu>li.active>a, .skin-yellow .sidebar-menu>li.menu-open>a, .skin-yellow .sidebar-menu>li:hover>a{
+    background: #aeded9!important;
+}
+.skin-red .sidebar a, .skin-purple .sidebar a , .skin-blue .sidebar a , .skin-black .sidebar a{
+    color: #383838;
+}
+.skin-purple .main-header .navbar .sidebar-toggle {
+    color: #383838;
+}
+.skin-black .sidebar-menu>li>.treeview-menu, .skin-blue .sidebar-menu>li>.treeview-menu, .skin-green .sidebar-menu>li>.treeview-menu, .skin-purple .sidebar-menu>li>.treeview-menu, .skin-red .sidebar-menu>li>.treeview-menu, .skin-yellow .sidebar-menu>li>.treeview-menu {
+    background: #aeded9!important;
+}
+.skin-purple .sidebar-menu .treeview-menu>li>a {
+    color: #686868;
+}
+.skin-purple .main-header li.user-header, .skin-purple-light .main-header li.user-header {
+    background-color: #aeded9;
+}
+
+@media (min-width: 768px){
+.sidebar-mini.sidebar-collapse .main-header .logo>.logo-lg {
+    display: block;
+    }
+}
+.main-header .logo{
+    padding: 0 7px;
+}
