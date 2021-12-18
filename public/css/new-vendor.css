@@ -1107,9 +1107,10 @@ body.skin-black-light {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    margin-left: 20px;
+    margin-left: 18px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .switcher .theme-bg-small {
     width: 55px;
@@ -1131,7 +1132,8 @@ body.skin-black-light {
 .switcher .skin-green, .switcher .skin-green-light,
 .switcher .skin-yellow, .switcher .skin-yellow-light,
 .switcher .skin-red, .switcher .skin-red-light,
-.switcher .skin-green, .switcher .skin-green-light{
+.switcher .skin-green, .switcher .skin-green-light,
+.switcher .skin-purple, .switcher .skin-purple-light{
     background-attachment: unset;
 }
 .skin-black {
