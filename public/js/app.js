@@ -2129,7 +2129,7 @@ $('.theme-bg-small').on('click', function () {
     if (!$('.theme-bg-small').hasClass('theme-bg-small-disabled')) {
         var selectedSkin = $(this).find('.theme-radio').attr('skin-value');
         $(this).find('.theme-radio').prop('checked', true);
-        alert(selectedSkin);
+        // alert(selectedSkin);
         changeSkin(selectedSkin);
     }
 });
