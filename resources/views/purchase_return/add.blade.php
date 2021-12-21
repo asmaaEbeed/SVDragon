@@ -37,9 +37,9 @@
 			<div class="clearfix"></div>
 			<hr>
 			<div class="col-sm-12">
-				<table class="table bg-gray" id="purchase_return_table">
+				<table class="table table-striped" id="purchase_return_table">
 		          	<thead>
-			            <tr class="bg-green">
+			            <tr class="">
 			              	<th>#</th>
 			              	<th>@lang('product.product_name')</th>
 			              	<th>@lang('sale.unit_price')</th>
