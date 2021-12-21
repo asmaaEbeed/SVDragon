@@ -32,7 +32,7 @@
 						</span>
 						{!! Form::select('contact_id', [], null, ['class' => 'form-control', 'placeholder' => __('messages.please_select'), 'required', 'id' => 'supplier_id']); !!}
 						<span class="input-group-btn">
-							<button type="button" class="btn btn-default bg-white btn-flat add_new_supplier" data-name=""><i class="fa fa-plus-circle text-primary fa-lg"></i></button>
+							<button type="button" class="btn btn-default bg-white btn-flat add_new_supplier border-gray" data-name=""><i class="fa fa-plus-circle text-primary fa-lg"></i></button>
 						</span>
 					</div>
 				</div>
