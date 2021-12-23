@@ -15,7 +15,7 @@
             <div class="box box-primary" id="accordion">
               <div class="box-header with-border">
                 <h3 class="box-title">
-                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseFilter">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseFilter" class="font-white">
                     <i class="fa fa-filter" aria-hidden="true"></i> @lang('report.filters')
                   </a>
                 </h3>

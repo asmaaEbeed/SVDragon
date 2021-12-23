@@ -5,6 +5,9 @@
 body{
     color: #252c3c 
 }
+.mb-35{
+    margin-bottom: 35px;
+}
 @media(min-width: 1281px) {
     .main-sidebar {
         width: 100%;
@@ -53,7 +56,8 @@ body{
 
     .sidebar-menu>li>.treeview-menu {
         position: absolute;
-        padding: 0
+        padding: 0;
+        box-shadow: 2px 2px 3px #0000006e;
     }
     .sidebar-menu .active>.treeview-menu{
         max-height: 350px;
@@ -161,6 +165,24 @@ body{
     border-color: rgb(0 0 0 / 21%);
     border-radius: 5px !important;
     margin: 6px;
+}
+.skin-yellow-light .btn-transparent, .skin-red-light .btn-transparent,
+.skin-purple-light .btn-transparent, .skin-blue-light .btn-transparent {
+    background: rgb(255 255 254) !important;
+    border-color: rgb(0 0 0 / 56%) !important;
+    border-radius: 5px !important;
+    margin: 6px;
+    color: #000 !important;
+}
+.skin-yellow-light .btn-transparent:hover, .skin-red-light .btn-transparent:hover,
+.skin-purple-light .btn-transparent:hover, .skin-blue-light .btn-transparent:hover
+{
+    -webkit-box-shadow: inset 0 3px 5px rgb(0 0 0 / 13%);
+    -moz-box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+    box-shadow: inset 0 3px 5px rgb(0 0 0 / 13%);
+}
+.btn-min-width{
+    min-width: 135px
 }
 .skin-blue-light .navbar-custom-menu .btn-warning, .skin-blue-light .btn-transparent,
 .skin-red-light .navbar-custom-menu .btn-warning, .skin-red-light .btn-transparent,
@@ -656,13 +678,20 @@ body.skin-green-light {
 .skin-black .box-tools a, .skin-black-light .box-tools a,
 .skin-black .box-tools button, .skin-black-light .box-tools button,
 .skin-yellow .box-tools a, .skin-yellow-light .box-tools a,
-.skin-yellow .box-tools button, .skin-yellow-light .box-tools button {
+.skin-yellow .box-tools button, .skin-yellow-light .box-tools button
+ {
     background: rgb(0 0 0 / 25%);
     border-color: rgb(0 0 0 / 18%);
 }
+form .btn.btn-primary.btn-flat
+{
+    background: rgb(0 0 0 / 25%);
+    border-color: rgb(137 137 137 / 72%);
+    min-width: 125px;
+}
 
-.box-tools a:hover,
-.box-tools a:active,
+.box-tools a:hover, 
+.box-tools a:active, 
 .box-tools button:hover,
 .box-tools button:focus,
 .box-tools button:active {
@@ -670,6 +699,24 @@ body.skin-green-light {
     background-color: rgb(0 0 0 / 48%);
     border-color: rgb(0 0 0 / 43%);
 }
+form .btn.btn-primary.btn-flat:hover,
+form .btn.btn-primary.btn-flat:active, 
+form .btn.btn-primary.btn-flat:focus
+{
+    background: rgb(0 0 0 / 44%);
+    border-color: rgb(207 204 204 / 83%);
+}
+.skin-blue-light form .btn.btn-primary.btn-flat:hover, .skin-yellow-light form .btn.btn-primary.btn-flat:hover,
+.skin-blue-light form .btn.btn-primary.btn-flat:active, .skin-yellow-light form .btn.btn-primary.btn-flat:active,
+.skin-blue-light form .btn.btn-primary.btn-flat:focus, .skin-yellow-light form .btn.btn-primary.btn-flat:focus,
+.skin-purple-light form .btn.btn-primary.btn-flat:hover, .skin-red-light form .btn.btn-primary.btn-flat:hover,
+.skin-purple-light form .btn.btn-primary.btn-flat:active, .skin-red-light form .btn.btn-primary.btn-flat:active,
+.skin-purple-light form .btn.btn-primary.btn-flat:focus, .skin-red-light form .btn.btn-primary.btn-flat:focus
+{
+    background: rgb(0 0 0 / 44%);
+    border-color: rgb(48 48 48 / 83%);
+}
+
 .box-body .btn-primary{
     border-color: rgb(0 0 0 / 18%);
     background: rgb(0 0 0 / 25%);
@@ -1511,4 +1558,125 @@ table.dataTable.fixedHeader-floating{
 .daterangepicker{
     background-color: #c5c5c5;
     color: #000 !important;
+}
+
+/*sell menu*/
+
+.input-group .input-group-addon {
+    border-radius: 0;
+    border-color: rgb(255 255 255 / 20%);
+    background-color: rgba(0, 0, 0, 0.1);
+    color: inherit
+}
+.input-group-addon .text-info{
+    color: inherit !important
+}
+.input-group .form-control option,
+.form-group .form-control option,
+.dataTables_length .form-control option {
+    color: #000
+}
+.table .table {
+    background-color: rgb(0 0 0 / 28%);
+}
+.table-slim>tbody>tr>td, .table-slim>tbody>tr>th, .table-slim>tfoot>tr>td, .table-slim>tfoot>tr>th, .table-slim>thead>tr>td, .table-slim>thead>tr>th {
+    padding: 3px;
+}
+.bootstrap-datetimepicker-widget{
+    color: #252c3c
+}
+.datepicker-days{
+    color: #252c3c
+    
+}
+.box .box-footer {
+    background-color:  transparent;
+}
+.nav-tabs-custom>.nav-tabs>li {
+    margin-right: 0;
+}
+.select2-search__field{
+    color: #252c3c
+}
+.well {
+    background-color: rgb(0 0 0 / 59%);
+    border: 1px solid 1px solid rgb(227 227 227 / 32%);
+}
+.skin-blue-light .well, .skin-purple-light .well,
+.skin-yellow-light .well, .skin-red-light .well,
+.skin-black-light .well {
+    background-color: rgb(255 255 255 / 59%);
+    border: 1px solid 1px solid rgb(227 227 227 / 72%);
+}
+.table>tbody>tr.success.success-transparent>th{
+    background-color: rgb(223 240 216 / 28%);
+}
+
+/*setting*/
+div.pos-tab-container{
+    background-color: rgb(0 0 0 / 35%);
+}
+.skin-blue-light div.pos-tab-container, .skin-purple-light div.pos-tab-container,
+.skin-yellow-light div.pos-tab-container, .skin-red-light div.pos-tab-container,
+.skin-black-light div.pos-tab-container {
+    background-color: rgb(255 255 255 / 35%);
+}
+div.pos-tab-content {
+    background-color: rgb(0 0 0 / 0%);
+}
+.list-group-transparent {
+    background-color: #0000009e;
+    border: 1px solid #3e3e3e;
+    color: inherit !important;
+}
+.skin-blue-light .list-group-transparent, .skin-red-light .list-group-transparent,
+.skin-black-light .list-group-transparent, .skin-yellow-light .list-group-transparent,
+.skin-purple-light .list-group-transparent{
+    border: 1px solid #9f9f9f;
+}
+.skin-blue-light .list-group-transparent, .skin-yellow-light .list-group-transparent,
+.skin-purple-light .list-group-transparent, .skin-red-light .list-group-transparent,
+.skin-black-light .list-group-transparent {
+    background-color: rgb(255 255 255 / 45%);
+}
+.skin-blue-light .list-group-transparent .list-group-item, .skin-yellow-light .list-group-transparent .list-group-item,
+.skin-purple-light .list-group-transparent .list-group-item, .skin-red-light .list-group-transparent .list-group-item,
+.skin-black-light .list-group-transparent .list-group-item {
+    border: 1px solid #b9b9b9;
+}
+div.pos-tab-menu div.list-group.list-group-transparent>a.active,  div.pos-tab-menu div.list-group.list-group-transparent>a.active .glyphicon, div.pos-tab-menu div.list-group.list-group-transparent>a.active {
+    background-color: #d3d3d3 !important;
+    border-color: #d3d3d3;
+    color: #000 !important;
+}
+.skin-purple-light div.pos-tab-menu div.list-group.list-group-transparent>a.active, .skin-purple-light  div.pos-tab-menu div.list-group.list-group-transparent>a.active .glyphicon, .skin-purple-light .pos-tab-menu div.list-group.list-group-transparent>a.active,
+.skin-blue-light div.pos-tab-menu div.list-group.list-group-transparent>a.active, .skin-blue-light  div.pos-tab-menu div.list-group.list-group-transparent>a.active .glyphicon, .skin-blue-light div.pos-tab-menu div.list-group.list-group-transparent>a.active,
+.skin-red-light div.pos-tab-menu div.list-group.list-group-transparent>a.active, .skin-red-light  div.pos-tab-menu div.list-group.list-group-transparent>a.active .glyphicon, .skin-red-light div.pos-tab-menu div.list-group.list-group-transparent>a.active, .skin-yellow-light div.pos-tab-menu div.list-group.list-group-transparent>a.active, .skin-yellow-light div.pos-tab-menu div.list-group.list-group-transparent>a.active .glyphicon, .skin-yellow-light .pos-tab-menu div.list-group.list-group-transparent>a.active,
+.skin-black-light div.pos-tab-menu div.list-group.list-group-transparent>a.active, .skin-black-light div.pos-tab-menu div.list-group.list-group-transparent>a.active .glyphicon, .skin-black-light div.pos-tab-menu div.list-group.list-group-transparent>a.active     {
+    background-color: #999999 !important;
+    border-color: #999999;
+}
+.list-group-transparent .list-group-item {
+    background-color: rgb(0 0 0 / 0) !important;
+    border: 1px solid #3e3e3e;
+    color: inherit !important;
+}
+div.pos-tab-menu div.list-group.list-group-transparent>a.active:after{
+    border-left: 10px solid #d3d3d3;
+}
+.skin-blue-light div.pos-tab-menu div.list-group.list-group-transparent>a.active:after,
+.skin-red-light div.pos-tab-menu div.list-group.list-group-transparent>a.active:after,
+.skin-black-light div.pos-tab-menu div.list-group.list-group-transparent>a.active:after,
+.skin-yellow-light div.pos-tab-menu div.list-group.list-group-transparent>a.active:after,
+.skin-purple-light div.pos-tab-menu div.list-group.list-group-transparent>a.active:after {
+    border-left: 10px solid #999999;
+}
+.list-group-transparent div.pos-tab-menu div.list-group>a.active .fa{
+    background-color: transparent;
+}
+.skin-black-light .select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #443d3d;
+}
+.skin-yellow .help-block{
+    color: #141414;
 }

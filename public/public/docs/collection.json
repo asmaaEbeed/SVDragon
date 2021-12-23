@@ -1,8 +1,8 @@
 {
     "variables": [],
     "info": {
-        "name": "samrt POS API",
-        "_postman_id": "4e0b2315-0689-4b10-96a0-acf1d5464322",
+        "name": "smart POS API",
+        "_postman_id": "dc484e73-8c52-4d82-8c55-2f70b66488a8",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.0.0\/collection.json"
     },
@@ -16,7 +16,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/get-attendance\/:user_id",
                             "query": [],
                             "variable": [
@@ -56,7 +56,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/clock-in",
                             "query": []
                         },
@@ -77,7 +77,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"user_id\": 1,\n    \"clock_in_time\": \"2000-06-13 13:13:00\",\n    \"clock_in_note\": \"provident\",\n    \"ip_address\": \"quae\",\n    \"latitude\": \"sed\",\n    \"longitude\": \"saepe\"\n}"
+                            "raw": "{\n    \"user_id\": 1,\n    \"clock_in_time\": \"2000-06-13 13:13:00\",\n    \"clock_in_note\": \"quos\",\n    \"ip_address\": \"dicta\",\n    \"latitude\": \"quas\",\n    \"longitude\": \"voluptate\"\n}"
                         },
                         "description": "",
                         "response": []
@@ -88,7 +88,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/clock-out",
                             "query": []
                         },
@@ -109,7 +109,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"user_id\": 1,\n    \"clock_out_time\": \"2000-06-13 13:13:00\",\n    \"clock_out_note\": \"consectetur\",\n    \"latitude\": \"mollitia\",\n    \"longitude\": \"cum\"\n}"
+                            "raw": "{\n    \"user_id\": 1,\n    \"clock_out_time\": \"2000-06-13 13:13:00\",\n    \"clock_out_note\": \"iusto\",\n    \"latitude\": \"sint\",\n    \"longitude\": \"accusamus\"\n}"
                         },
                         "description": "",
                         "response": []
@@ -120,12 +120,12 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/holidays",
                             "query": [
                                 {
                                     "key": "location_id",
-                                    "value": "sint",
+                                    "value": "sunt",
                                     "description": "id of the location",
                                     "disabled": false
                                 },
@@ -177,7 +177,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/brand",
                             "query": []
                         },
@@ -209,7 +209,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/brand\/:brand",
                             "query": [],
                             "variable": [
@@ -255,7 +255,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/business-location",
                             "query": []
                         },
@@ -287,7 +287,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/business-location\/:business_location",
                             "query": []
                         },
@@ -325,7 +325,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/crm\/follow-ups",
                             "query": [
                                 {
@@ -342,13 +342,13 @@
                                 },
                                 {
                                     "key": "status",
-                                    "value": "enim",
+                                    "value": "maiores",
                                     "description": "filter the result through status, get status from getFollowUpResources->statuses",
                                     "disabled": false
                                 },
                                 {
                                     "key": "follow_up_type",
-                                    "value": "aut",
+                                    "value": "similique",
                                     "description": "filter the result through follow_up_type, get follow_up_type from getFollowUpResources->follow_up_types",
                                     "disabled": false
                                 },
@@ -400,7 +400,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/crm\/follow-ups",
                             "query": []
                         },
@@ -421,7 +421,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"title\": \"Meeting with client\",\n    \"contact_id\": 2,\n    \"description\": \"pariatur\",\n    \"schedule_type\": \"qui\",\n    \"user_id\": \"[2,3,5]\",\n    \"notify_before\": 5,\n    \"notify_type\": \"minute\",\n    \"status\": \"open\",\n    \"notify_via\": \"['sms' => 0 ,'mail' => 1]\",\n    \"start_datetime\": \"2021-01-06 13:05:00\",\n    \"end_datetime\": \"2021-01-06 13:05:00\",\n    \"followup_additional_info\": \"['call duration' => '1 hour']\",\n    \"allow_notification\": true\n}"
+                            "raw": "{\n    \"title\": \"Meeting with client\",\n    \"contact_id\": 2,\n    \"description\": \"totam\",\n    \"schedule_type\": \"inventore\",\n    \"user_id\": \"[2,3,5]\",\n    \"notify_before\": 5,\n    \"notify_type\": \"minute\",\n    \"status\": \"open\",\n    \"notify_via\": \"['sms' => 0 ,'mail' => 1]\",\n    \"start_datetime\": \"2021-01-06 13:05:00\",\n    \"end_datetime\": \"2021-01-06 13:05:00\",\n    \"followup_additional_info\": \"['call duration' => '1 hour']\",\n    \"allow_notification\": true\n}"
                         },
                         "description": "",
                         "response": []
@@ -432,7 +432,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/crm\/follow-ups\/:follow_up",
                             "query": [],
                             "variable": [
@@ -472,7 +472,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/crm\/follow-ups\/:follow_up",
                             "query": [],
                             "variable": [
@@ -501,7 +501,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"title\": \"Meeting with client\",\n    \"contact_id\": 2,\n    \"description\": \"totam\",\n    \"schedule_type\": \"asperiores\",\n    \"user_id\": \"[2,3,5]\",\n    \"notify_before\": 5,\n    \"notify_type\": \"minute\",\n    \"status\": \"open\",\n    \"notify_via\": \"['sms' => 0 ,'mail' => 1]\",\n    \"followup_additional_info\": \"['call duration' => '1 hour']\",\n    \"start_datetime\": \"2021-01-06 13:05:00\",\n    \"end_datetime\": \"2021-01-06 13:05:00\",\n    \"allow_notification\": true\n}"
+                            "raw": "{\n    \"title\": \"Meeting with client\",\n    \"contact_id\": 2,\n    \"description\": \"aperiam\",\n    \"schedule_type\": \"aut\",\n    \"user_id\": \"[2,3,5]\",\n    \"notify_before\": 5,\n    \"notify_type\": \"minute\",\n    \"status\": \"open\",\n    \"notify_via\": \"['sms' => 0 ,'mail' => 1]\",\n    \"followup_additional_info\": \"['call duration' => '1 hour']\",\n    \"start_datetime\": \"2021-01-06 13:05:00\",\n    \"end_datetime\": \"2021-01-06 13:05:00\",\n    \"allow_notification\": true\n}"
                         },
                         "description": "",
                         "response": []
@@ -512,7 +512,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/crm\/follow-up-resources",
                             "query": []
                         },
@@ -544,7 +544,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/crm\/leads",
                             "query": [
                                 {
@@ -555,31 +555,31 @@
                                 },
                                 {
                                     "key": "name",
-                                    "value": "id",
+                                    "value": "alias",
                                     "description": "Search term for lead name",
                                     "disabled": false
                                 },
                                 {
                                     "key": "biz_name",
-                                    "value": "dolorem",
+                                    "value": "officia",
                                     "description": "Search term for lead's business name",
                                     "disabled": false
                                 },
                                 {
                                     "key": "mobile_num",
-                                    "value": "20",
+                                    "value": "12",
                                     "description": "Search term for lead's mobile number",
                                     "disabled": false
                                 },
                                 {
                                     "key": "contact_id",
-                                    "value": "nisi",
+                                    "value": "blanditiis",
                                     "description": "Search term for lead's contact_id. Ex(CO0005)",
                                     "disabled": false
                                 },
                                 {
                                     "key": "order_by",
-                                    "value": "et",
+                                    "value": "animi",
                                     "description": "Column name to sort the result, Column: name, supplier_business_name",
                                     "disabled": false
                                 },
@@ -625,7 +625,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/crm\/call-logs",
                             "query": []
                         },
@@ -646,7 +646,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"call_logs\": [\n        {\n            \"mobile_number\": \"repellat\",\n            \"mobile_name\": \"quis\",\n            \"call_type\": \"call\",\n            \"start_time\": \"rerum\",\n            \"end_time\": \"illo\",\n            \"duration\": \"labore\"\n        }\n    ]\n}"
+                            "raw": "{\n    \"call_logs\": [\n        {\n            \"mobile_number\": \"cupiditate\",\n            \"mobile_name\": \"autem\",\n            \"call_type\": \"call\",\n            \"start_time\": \"aperiam\",\n            \"end_time\": \"dolor\",\n            \"duration\": \"ea\"\n        }\n    ]\n}"
                         },
                         "description": "",
                         "response": []
@@ -663,7 +663,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/cash-register",
                             "query": [
                                 {
@@ -692,7 +692,7 @@
                                 },
                                 {
                                     "key": "location_id",
-                                    "value": "quas",
+                                    "value": "molestias",
                                     "description": "id of the location",
                                     "disabled": false
                                 },
@@ -732,7 +732,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/cash-register",
                             "query": []
                         },
@@ -753,7 +753,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"location_id\": 6,\n    \"initial_amount\": 56664030,\n    \"created_at\": \"2020-5-7 15:20:22\",\n    \"closed_at\": \"2020-5-7 15:20:22\",\n    \"status\": \"close\",\n    \"closing_amount\": 434863.327005742,\n    \"total_card_slips\": 18,\n    \"total_cheques\": 8,\n    \"closing_note\": \"aliquid\",\n    \"transaction_ids\": \"1,2,3\"\n}"
+                            "raw": "{\n    \"location_id\": 18,\n    \"initial_amount\": 0,\n    \"created_at\": \"2020-5-7 15:20:22\",\n    \"closed_at\": \"2020-5-7 15:20:22\",\n    \"status\": \"close\",\n    \"closing_amount\": 994605,\n    \"total_card_slips\": 13,\n    \"total_cheques\": 12,\n    \"closing_note\": \"modi\",\n    \"transaction_ids\": \"1,2,3\"\n}"
                         },
                         "description": "",
                         "response": []
@@ -764,7 +764,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/cash-register\/:cash_register",
                             "query": [],
                             "variable": [
@@ -810,48 +810,48 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/contactapi",
                             "query": [
                                 {
                                     "key": "type",
-                                    "value": "quis",
+                                    "value": "totam",
                                     "description": "Type of contact (supplier, customer)",
                                     "disabled": false
                                 },
                                 {
                                     "key": "name",
-                                    "value": "delectus",
+                                    "value": "soluta",
                                     "description": "Search term for contact name",
                                     "disabled": false
                                 },
                                 {
                                     "key": "biz_name",
-                                    "value": "voluptatem",
+                                    "value": "deleniti",
                                     "description": "Search term for contact's business name",
                                     "disabled": false
                                 },
                                 {
                                     "key": "mobile_num",
-                                    "value": "10",
+                                    "value": "3",
                                     "description": "Search term for contact's mobile number",
                                     "disabled": false
                                 },
                                 {
                                     "key": "contact_id",
-                                    "value": "cupiditate",
+                                    "value": "adipisci",
                                     "description": "Search term for contact's contact_id. Ex(CO0005)",
                                     "disabled": false
                                 },
                                 {
                                     "key": "order_by",
-                                    "value": "velit",
+                                    "value": "voluptas",
                                     "description": "Column name to sort the result, Column: name, supplier_business_name",
                                     "disabled": false
                                 },
                                 {
                                     "key": "direction",
-                                    "value": "maxime",
+                                    "value": "doloremque",
                                     "description": "Direction to sort the result, Direction: desc, asc",
                                     "disabled": false
                                 },
@@ -891,7 +891,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/contactapi",
                             "query": []
                         },
@@ -912,7 +912,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"type\": \"customer\",\n    \"supplier_business_name\": \"culpa\",\n    \"prefix\": \"veniam\",\n    \"first_name\": \"et\",\n    \"middle_name\": \"voluptatem\",\n    \"last_name\": \"velit\",\n    \"tax_number\": \"8787fefef\",\n    \"pay_term_number\": 3,\n    \"pay_term_type\": \"months\",\n    \"mobile\": \"4578691009\",\n    \"landline\": \"5487-8454-4145\",\n    \"alternate_number\": \"841847541222\",\n    \"address_line_1\": \"quas\",\n    \"address_line_2\": \"vero\",\n    \"city\": \"necessitatibus\",\n    \"state\": \"rerum\",\n    \"country\": \"voluptatem\",\n    \"zip_code\": \"quaerat\",\n    \"customer_group_id\": \"maiores\",\n    \"contact_id\": \"dicta\",\n    \"dob\": \"2000-06-13\",\n    \"custom_field1\": \"aliquam\",\n    \"custom_field2\": \"consequatur\",\n    \"custom_field3\": \"quaerat\",\n    \"custom_field4\": \"rerum\",\n    \"email\": \"quis\",\n    \"shipping_address\": \"eos\",\n    \"position\": \"sunt\",\n    \"opening_balance\": 0,\n    \"source_id\": 6,\n    \"life_stage_id\": 15,\n    \"assigned_to\": []\n}"
+                            "raw": "{\n    \"type\": \"customer\",\n    \"supplier_business_name\": \"laborum\",\n    \"prefix\": \"labore\",\n    \"first_name\": \"est\",\n    \"middle_name\": \"officia\",\n    \"last_name\": \"sint\",\n    \"tax_number\": \"8787fefef\",\n    \"pay_term_number\": 3,\n    \"pay_term_type\": \"months\",\n    \"mobile\": \"4578691009\",\n    \"landline\": \"5487-8454-4145\",\n    \"alternate_number\": \"841847541222\",\n    \"address_line_1\": \"vel\",\n    \"address_line_2\": \"ducimus\",\n    \"city\": \"sed\",\n    \"state\": \"consequatur\",\n    \"country\": \"expedita\",\n    \"zip_code\": \"quaerat\",\n    \"customer_group_id\": \"reiciendis\",\n    \"contact_id\": \"a\",\n    \"dob\": \"2000-06-13\",\n    \"custom_field1\": \"sapiente\",\n    \"custom_field2\": \"qui\",\n    \"custom_field3\": \"ipsum\",\n    \"custom_field4\": \"optio\",\n    \"email\": \"quia\",\n    \"shipping_address\": \"neque\",\n    \"position\": \"neque\",\n    \"opening_balance\": 0,\n    \"source_id\": 9,\n    \"life_stage_id\": 5,\n    \"assigned_to\": []\n}"
                         },
                         "description": "",
                         "response": []
@@ -923,7 +923,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/contactapi\/:contactapi",
                             "query": []
                         },
@@ -955,7 +955,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/contactapi\/:contactapi",
                             "query": []
                         },
@@ -976,7 +976,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"type\": \"customer\",\n    \"supplier_business_name\": \"dolorem\",\n    \"prefix\": \"aut\",\n    \"first_name\": \"hic\",\n    \"middle_name\": \"dolores\",\n    \"last_name\": \"aut\",\n    \"tax_number\": \"488744dwd\",\n    \"pay_term_number\": 3,\n    \"pay_term_type\": \"months\",\n    \"mobile\": \"8795461009\",\n    \"landline\": \"65484-848-848\",\n    \"alternate_number\": \"9898795220\",\n    \"address_line_1\": \"dolores\",\n    \"address_line_2\": \"molestias\",\n    \"city\": \"aut\",\n    \"state\": \"velit\",\n    \"country\": \"qui\",\n    \"zip_code\": \"aut\",\n    \"customer_group_id\": \"quia\",\n    \"contact_id\": \"repellat\",\n    \"dob\": \"2000-06-13\",\n    \"custom_field1\": \"rerum\",\n    \"custom_field2\": \"consequuntur\",\n    \"custom_field3\": \"et\",\n    \"custom_field4\": \"enim\",\n    \"email\": \"quis\",\n    \"shipping_address\": \"impedit\",\n    \"position\": \"qui\",\n    \"opening_balance\": 10.3,\n    \"source_id\": 4,\n    \"life_stage_id\": 5,\n    \"assigned_to\": []\n}"
+                            "raw": "{\n    \"type\": \"customer\",\n    \"supplier_business_name\": \"qui\",\n    \"prefix\": \"aperiam\",\n    \"first_name\": \"odit\",\n    \"middle_name\": \"quos\",\n    \"last_name\": \"dolores\",\n    \"tax_number\": \"488744dwd\",\n    \"pay_term_number\": 3,\n    \"pay_term_type\": \"months\",\n    \"mobile\": \"8795461009\",\n    \"landline\": \"65484-848-848\",\n    \"alternate_number\": \"9898795220\",\n    \"address_line_1\": \"dolorum\",\n    \"address_line_2\": \"deleniti\",\n    \"city\": \"veritatis\",\n    \"state\": \"ut\",\n    \"country\": \"adipisci\",\n    \"zip_code\": \"beatae\",\n    \"customer_group_id\": \"quia\",\n    \"contact_id\": \"consequatur\",\n    \"dob\": \"2000-06-13\",\n    \"custom_field1\": \"doloribus\",\n    \"custom_field2\": \"natus\",\n    \"custom_field3\": \"ea\",\n    \"custom_field4\": \"non\",\n    \"email\": \"illum\",\n    \"shipping_address\": \"sint\",\n    \"position\": \"sunt\",\n    \"opening_balance\": 10.3,\n    \"source_id\": 10,\n    \"life_stage_id\": 17,\n    \"assigned_to\": []\n}"
                         },
                         "description": "",
                         "response": []
@@ -987,7 +987,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/contactapi-payment",
                             "query": []
                         },
@@ -1008,7 +1008,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"contact_id\": 17,\n    \"amount\": 453.13,\n    \"method\": \"cash\",\n    \"paid_on\": \"2020-07-22 15:48:29\",\n    \"account_id\": 11,\n    \"card_number\": \"beatae\",\n    \"card_holder_name\": \"aut\",\n    \"card_transaction_number\": \"blanditiis\",\n    \"card_type\": \"corrupti\",\n    \"card_month\": \"vel\",\n    \"card_year\": \"omnis\",\n    \"card_security\": \"est\",\n    \"transaction_no_1\": \"consequatur\",\n    \"transaction_no_2\": \"deleniti\",\n    \"transaction_no_3\": \"non\",\n    \"cheque_number\": \"qui\",\n    \"bank_account_number\": \"error\",\n    \"note\": \"eum\"\n}"
+                            "raw": "{\n    \"contact_id\": 17,\n    \"amount\": 453.13,\n    \"method\": \"cash\",\n    \"paid_on\": \"2020-07-22 15:48:29\",\n    \"account_id\": 13,\n    \"card_number\": \"velit\",\n    \"card_holder_name\": \"illo\",\n    \"card_transaction_number\": \"ut\",\n    \"card_type\": \"error\",\n    \"card_month\": \"est\",\n    \"card_year\": \"velit\",\n    \"card_security\": \"harum\",\n    \"transaction_no_1\": \"et\",\n    \"transaction_no_2\": \"voluptatem\",\n    \"transaction_no_3\": \"consequatur\",\n    \"cheque_number\": \"repellat\",\n    \"bank_account_number\": \"quisquam\",\n    \"note\": \"consectetur\"\n}"
                         },
                         "description": "",
                         "response": []
@@ -1025,12 +1025,12 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/expense",
                             "query": [
                                 {
                                     "key": "location_id",
-                                    "value": "nihil",
+                                    "value": "nostrum",
                                     "description": "id of the location",
                                     "disabled": false
                                 },
@@ -1054,7 +1054,7 @@
                                 },
                                 {
                                     "key": "expense_for",
-                                    "value": "harum",
+                                    "value": "dolores",
                                     "description": "id of the user for which expense is created",
                                     "disabled": false
                                 },
@@ -1094,7 +1094,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/expense",
                             "query": []
                         },
@@ -1115,7 +1115,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"location_id\": 20,\n    \"final_total\": 0.97,\n    \"transaction_date\": \"2020-5-7 15:20:22\",\n    \"tax_rate_id\": 19,\n    \"expense_for\": 11,\n    \"contact_id\": 6,\n    \"additional_notes\": \"ut\",\n    \"is_refund\": 0,\n    \"is_recurring\": 0,\n    \"recur_interval\": 17,\n    \"recur_interval_type\": \"months\",\n    \"subscription_repeat_on\": 15,\n    \"subscription_no\": \"amet\",\n    \"recur_repetitions\": 16,\n    \"payment\": [\n        {\n            \"amount\": 453.13,\n            \"method\": \"cash\",\n            \"account_id\": 2,\n            \"card_number\": \"qui\",\n            \"card_holder_name\": \"ipsum\",\n            \"card_transaction_number\": \"aspernatur\",\n            \"card_type\": \"aliquid\",\n            \"card_month\": \"qui\",\n            \"card_year\": \"est\",\n            \"card_security\": \"inventore\",\n            \"transaction_no_1\": \"iste\",\n            \"transaction_no_2\": \"earum\",\n            \"transaction_no_3\": \"illum\",\n            \"note\": \"quisquam\",\n            \"cheque_number\": \"non\"\n        }\n    ]\n}"
+                            "raw": "{\n    \"location_id\": 1,\n    \"final_total\": 562771.09868825,\n    \"transaction_date\": \"2020-5-7 15:20:22\",\n    \"tax_rate_id\": 8,\n    \"expense_for\": 11,\n    \"contact_id\": 11,\n    \"additional_notes\": \"nemo\",\n    \"is_refund\": 0,\n    \"is_recurring\": 0,\n    \"recur_interval\": 15,\n    \"recur_interval_type\": \"months\",\n    \"subscription_repeat_on\": 15,\n    \"subscription_no\": \"quo\",\n    \"recur_repetitions\": 13,\n    \"payment\": [\n        {\n            \"amount\": 453.13,\n            \"method\": \"cash\",\n            \"account_id\": 18,\n            \"card_number\": \"sapiente\",\n            \"card_holder_name\": \"dolor\",\n            \"card_transaction_number\": \"ut\",\n            \"card_type\": \"eum\",\n            \"card_month\": \"rem\",\n            \"card_year\": \"sed\",\n            \"card_security\": \"dolorem\",\n            \"transaction_no_1\": \"laborum\",\n            \"transaction_no_2\": \"deleniti\",\n            \"transaction_no_3\": \"nemo\",\n            \"note\": \"numquam\",\n            \"cheque_number\": \"aut\"\n        }\n    ]\n}"
                         },
                         "description": "",
                         "response": []
@@ -1126,7 +1126,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/expense\/:expense",
                             "query": [],
                             "variable": [
@@ -1166,7 +1166,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/expense\/:expense",
                             "query": []
                         },
@@ -1187,7 +1187,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"final_total\": 8278.7,\n    \"transaction_date\": \"2020-5-7 15:20:22\",\n    \"tax_rate_id\": 2,\n    \"expense_for\": 19,\n    \"contact_id\": 11,\n    \"additional_notes\": \"laborum\",\n    \"is_recurring\": 0,\n    \"recur_interval\": 10,\n    \"recur_interval_type\": \"months\",\n    \"subscription_repeat_on\": 15,\n    \"subscription_no\": \"hic\",\n    \"recur_repetitions\": 16,\n    \"payment\": []\n}"
+                            "raw": "{\n    \"final_total\": 2173.9478,\n    \"transaction_date\": \"2020-5-7 15:20:22\",\n    \"tax_rate_id\": 16,\n    \"expense_for\": 2,\n    \"contact_id\": 1,\n    \"additional_notes\": \"aliquid\",\n    \"is_recurring\": 0,\n    \"recur_interval\": 11,\n    \"recur_interval_type\": \"months\",\n    \"subscription_repeat_on\": 15,\n    \"subscription_no\": \"dignissimos\",\n    \"recur_repetitions\": 18,\n    \"payment\": []\n}"
                         },
                         "description": "",
                         "response": []
@@ -1198,12 +1198,12 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/expense-refund",
                             "query": [
                                 {
                                     "key": "location_id",
-                                    "value": "ducimus",
+                                    "value": "culpa",
                                     "description": "id of the location",
                                     "disabled": false
                                 },
@@ -1227,7 +1227,7 @@
                                 },
                                 {
                                     "key": "expense_for",
-                                    "value": "itaque",
+                                    "value": "laudantium",
                                     "description": "id of the user for which expense is created",
                                     "disabled": false
                                 },
@@ -1273,48 +1273,48 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/product",
                             "query": [
                                 {
                                     "key": "brand_id",
-                                    "value": "accusantium",
+                                    "value": "enim",
                                     "description": "",
                                     "disabled": false
                                 },
                                 {
                                     "key": "category_id",
-                                    "value": "veniam",
+                                    "value": "aut",
                                     "description": "",
                                     "disabled": false
                                 },
                                 {
                                     "key": "sub_category_id",
-                                    "value": "neque",
+                                    "value": "nemo",
                                     "description": "",
                                     "disabled": false
                                 },
                                 {
                                     "key": "location_id",
-                                    "value": "itaque",
+                                    "value": "consequatur",
                                     "description": "",
                                     "disabled": false
                                 },
                                 {
                                     "key": "selling_price_group",
-                                    "value": "ut",
+                                    "value": "recusandae",
                                     "description": "(1, 0)",
                                     "disabled": false
                                 },
                                 {
                                     "key": "name",
-                                    "value": "culpa",
+                                    "value": "qui",
                                     "description": "Search term for product name",
                                     "disabled": false
                                 },
                                 {
                                     "key": "sku",
-                                    "value": "necessitatibus",
+                                    "value": "delectus",
                                     "description": "Search term for product sku",
                                     "disabled": false
                                 },
@@ -1354,12 +1354,12 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/product\/:product",
                             "query": [
                                 {
                                     "key": "selling_price_group",
-                                    "value": "soluta",
+                                    "value": "nesciunt",
                                     "description": "(1, 0)",
                                     "disabled": false
                                 }
@@ -1401,7 +1401,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/selling-price-group",
                             "query": []
                         },
@@ -1433,42 +1433,42 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/variation\/:id",
                             "query": [
                                 {
                                     "key": "brand_id",
-                                    "value": "omnis",
+                                    "value": "quibusdam",
                                     "description": "",
                                     "disabled": false
                                 },
                                 {
                                     "key": "category_id",
-                                    "value": "ab",
+                                    "value": "quidem",
                                     "description": "",
                                     "disabled": false
                                 },
                                 {
                                     "key": "sub_category_id",
-                                    "value": "consequatur",
+                                    "value": "cupiditate",
                                     "description": "",
                                     "disabled": false
                                 },
                                 {
                                     "key": "not_for_selling",
-                                    "value": "iste",
+                                    "value": "molestiae",
                                     "description": "Values: 0 or 1",
                                     "disabled": false
                                 },
                                 {
                                     "key": "name",
-                                    "value": "omnis",
+                                    "value": "est",
                                     "description": "Search term for product name",
                                     "disabled": false
                                 },
                                 {
                                     "key": "sku",
-                                    "value": "itaque",
+                                    "value": "pariatur",
                                     "description": "Search term for product sku",
                                     "disabled": false
                                 },
@@ -1514,18 +1514,18 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/sell",
                             "query": [
                                 {
                                     "key": "location_id",
-                                    "value": "nisi",
+                                    "value": "sint",
                                     "description": "id of the location",
                                     "disabled": false
                                 },
                                 {
                                     "key": "contact_id",
-                                    "value": "modi",
+                                    "value": "aut",
                                     "description": "id of the customer",
                                     "disabled": false
                                 },
@@ -1549,13 +1549,13 @@
                                 },
                                 {
                                     "key": "user_id",
-                                    "value": "quis",
+                                    "value": "aut",
                                     "description": "id of the user who created the sale",
                                     "disabled": false
                                 },
                                 {
                                     "key": "service_staff_id",
-                                    "value": "nostrum",
+                                    "value": "fugit",
                                     "description": "id of the service staff assigned with the sale",
                                     "disabled": false
                                 },
@@ -1567,7 +1567,7 @@
                                 },
                                 {
                                     "key": "only_subscriptions",
-                                    "value": "consequuntur",
+                                    "value": "veritatis",
                                     "description": "Filter only subcription invoices (1, 0)",
                                     "disabled": false
                                 },
@@ -1613,7 +1613,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/sell",
                             "query": []
                         },
@@ -1634,7 +1634,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"sells\": [\n        {\n            \"location_id\": 12,\n            \"contact_id\": 20,\n            \"transaction_date\": \"2020-07-22 15:48:29\",\n            \"invoice_no\": \"consequatur\",\n            \"status\": \"final\",\n            \"sub_status\": \"null\",\n            \"is_quotation\": true,\n            \"tax_rate_id\": 8,\n            \"discount_amount\": 10,\n            \"discount_type\": \"fixed\",\n            \"sale_note\": \"consequatur\",\n            \"staff_note\": \"doloremque\",\n            \"commission_agent\": 5,\n            \"shipping_details\": \"Express Delivery\",\n            \"shipping_address\": \"et\",\n            \"shipping_status\": \"ordered\",\n            \"delivered_to\": \"'Mr robin'\",\n            \"shipping_charges\": 10,\n            \"packing_charge\": 10,\n            \"exchange_rate\": 1,\n            \"selling_price_group_id\": 3,\n            \"pay_term_number\": 3,\n            \"pay_term_type\": \"months\",\n            \"is_suspend\": false,\n            \"is_recurring\": 0,\n            \"recur_interval\": 1,\n            \"recur_interval_type\": \"months\",\n            \"subscription_repeat_on\": 15,\n            \"subscription_no\": \"veniam\",\n            \"recur_repetitions\": 17,\n            \"rp_redeemed\": 9,\n            \"rp_redeemed_amount\": 13.5,\n            \"types_of_service_id\": 3,\n            \"service_custom_field_1\": \"vel\",\n            \"service_custom_field_2\": \"aut\",\n            \"service_custom_field_3\": \"dolor\",\n            \"service_custom_field_4\": \"consequatur\",\n            \"round_off_amount\": 2.380853906,\n            \"table_id\": 1,\n            \"service_staff_id\": 15,\n            \"change_return\": 0,\n            \"products\": [\n                {\n                    \"product_id\": 17,\n                    \"variation_id\": 58,\n                    \"quantity\": 1,\n                    \"unit_price\": 437.5,\n                    \"tax_rate_id\": 0,\n                    \"discount_amount\": 0,\n                    \"discount_type\": \"percentage\",\n                    \"sub_unit_id\": 20,\n                    \"note\": \"nisi\"\n                }\n            ],\n            \"payments\": [\n                {\n                    \"amount\": 453.13,\n                    \"method\": \"cash\",\n                    \"account_id\": 8,\n                    \"card_number\": \"labore\",\n                    \"card_holder_name\": \"dolor\",\n                    \"card_transaction_number\": \"numquam\",\n                    \"card_type\": \"ut\",\n                    \"card_month\": \"accusamus\",\n                    \"card_year\": \"praesentium\",\n                    \"card_security\": \"fuga\",\n                    \"transaction_no_1\": \"sapiente\",\n                    \"transaction_no_2\": \"libero\",\n                    \"transaction_no_3\": \"labore\",\n                    \"bank_account_number\": \"assumenda\",\n                    \"note\": \"voluptate\",\n                    \"cheque_number\": \"sit\"\n                }\n            ]\n        }\n    ]\n}"
+                            "raw": "{\n    \"sells\": [\n        {\n            \"location_id\": 3,\n            \"contact_id\": 9,\n            \"transaction_date\": \"2020-07-22 15:48:29\",\n            \"invoice_no\": \"sequi\",\n            \"status\": \"final\",\n            \"sub_status\": \"null\",\n            \"is_quotation\": true,\n            \"tax_rate_id\": 19,\n            \"discount_amount\": 10,\n            \"discount_type\": \"fixed\",\n            \"sale_note\": \"architecto\",\n            \"staff_note\": \"asperiores\",\n            \"commission_agent\": 20,\n            \"shipping_details\": \"Express Delivery\",\n            \"shipping_address\": \"beatae\",\n            \"shipping_status\": \"ordered\",\n            \"delivered_to\": \"'Mr robin'\",\n            \"shipping_charges\": 10,\n            \"packing_charge\": 10,\n            \"exchange_rate\": 1,\n            \"selling_price_group_id\": 2,\n            \"pay_term_number\": 3,\n            \"pay_term_type\": \"months\",\n            \"is_suspend\": false,\n            \"is_recurring\": 0,\n            \"recur_interval\": 10,\n            \"recur_interval_type\": \"months\",\n            \"subscription_repeat_on\": 15,\n            \"subscription_no\": \"repellat\",\n            \"recur_repetitions\": 19,\n            \"rp_redeemed\": 20,\n            \"rp_redeemed_amount\": 13.5,\n            \"types_of_service_id\": 14,\n            \"service_custom_field_1\": \"aliquid\",\n            \"service_custom_field_2\": \"provident\",\n            \"service_custom_field_3\": \"quidem\",\n            \"service_custom_field_4\": \"et\",\n            \"round_off_amount\": 728,\n            \"table_id\": 13,\n            \"service_staff_id\": 2,\n            \"change_return\": 0,\n            \"products\": [\n                {\n                    \"product_id\": 17,\n                    \"variation_id\": 58,\n                    \"quantity\": 1,\n                    \"unit_price\": 437.5,\n                    \"tax_rate_id\": 0,\n                    \"discount_amount\": 0,\n                    \"discount_type\": \"percentage\",\n                    \"sub_unit_id\": 16,\n                    \"note\": \"doloremque\"\n                }\n            ],\n            \"payments\": [\n                {\n                    \"amount\": 453.13,\n                    \"method\": \"cash\",\n                    \"account_id\": 13,\n                    \"card_number\": \"maiores\",\n                    \"card_holder_name\": \"omnis\",\n                    \"card_transaction_number\": \"labore\",\n                    \"card_type\": \"aut\",\n                    \"card_month\": \"recusandae\",\n                    \"card_year\": \"sint\",\n                    \"card_security\": \"et\",\n                    \"transaction_no_1\": \"minima\",\n                    \"transaction_no_2\": \"officia\",\n                    \"transaction_no_3\": \"ut\",\n                    \"bank_account_number\": \"occaecati\",\n                    \"note\": \"deleniti\",\n                    \"cheque_number\": \"sit\"\n                }\n            ]\n        }\n    ]\n}"
                         },
                         "description": "",
                         "response": []
@@ -1645,7 +1645,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/sell\/:sell",
                             "query": [],
                             "variable": [
@@ -1685,7 +1685,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/sell\/:sell",
                             "query": [],
                             "variable": [
@@ -1714,7 +1714,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"contact_id\": 20,\n    \"transaction_date\": \"2020-5-7 15:20:22\",\n    \"status\": \"final\",\n    \"sub_status\": \"null\",\n    \"is_quotation\": true,\n    \"tax_rate_id\": 16,\n    \"discount_amount\": 10,\n    \"discount_type\": \"fixed\",\n    \"sale_note\": \"ducimus\",\n    \"staff_note\": \"enim\",\n    \"sells\": [\n        {\n            \"is_suspend\": false\n        }\n    ],\n    \"commission_agent\": 9,\n    \"shipping_details\": \"Express Delivery\",\n    \"shipping_address\": \"quo\",\n    \"shipping_status\": \"ordered\",\n    \"delivered_to\": \"Mr Robin\",\n    \"shipping_charges\": 10,\n    \"packing_charge\": 10,\n    \"exchange_rate\": 1,\n    \"selling_price_group_id\": 12,\n    \"pay_term_number\": 2,\n    \"pay_term_type\": \"months\",\n    \"is_recurring\": 0,\n    \"recur_interval\": 18,\n    \"recur_interval_type\": \"days\",\n    \"subscription_repeat_on\": 7,\n    \"subscription_no\": \"vel\",\n    \"recur_repetitions\": 3,\n    \"rp_redeemed\": 16,\n    \"rp_redeemed_amount\": 13.5,\n    \"types_of_service_id\": 6,\n    \"service_custom_field_1\": \"et\",\n    \"service_custom_field_2\": \"maiores\",\n    \"service_custom_field_3\": \"vitae\",\n    \"service_custom_field_4\": \"ducimus\",\n    \"round_off_amount\": 222.90419,\n    \"table_id\": 19,\n    \"service_staff_id\": 14,\n    \"change_return\": 0,\n    \"change_return_id\": 13,\n    \"products\": [\n        {\n            \"sell_line_id\": 18,\n            \"product_id\": 17,\n            \"variation_id\": 58,\n            \"quantity\": 1,\n            \"unit_price\": 437.5,\n            \"tax_rate_id\": 3,\n            \"discount_amount\": 0,\n            \"discount_type\": \"percentage\",\n            \"sub_unit_id\": 19,\n            \"note\": \"eum\"\n        }\n    ],\n    \"payments\": [\n        {\n            \"payment_id\": 18,\n            \"amount\": 453.13,\n            \"method\": \"cash\",\n            \"account_id\": 14,\n            \"card_number\": \"ut\",\n            \"card_holder_name\": \"ut\",\n            \"card_transaction_number\": \"optio\",\n            \"card_type\": \"ullam\",\n            \"card_month\": \"sequi\",\n            \"card_year\": \"dolorum\",\n            \"card_security\": \"doloremque\",\n            \"transaction_no_1\": \"harum\",\n            \"transaction_no_2\": \"non\",\n            \"transaction_no_3\": \"libero\",\n            \"note\": \"quod\",\n            \"cheque_number\": \"quisquam\",\n            \"bank_account_number\": \"hic\"\n        }\n    ]\n}"
+                            "raw": "{\n    \"contact_id\": 10,\n    \"transaction_date\": \"2020-5-7 15:20:22\",\n    \"status\": \"final\",\n    \"sub_status\": \"null\",\n    \"is_quotation\": true,\n    \"tax_rate_id\": 6,\n    \"discount_amount\": 10,\n    \"discount_type\": \"fixed\",\n    \"sale_note\": \"neque\",\n    \"staff_note\": \"omnis\",\n    \"sells\": [\n        {\n            \"is_suspend\": false\n        }\n    ],\n    \"commission_agent\": 10,\n    \"shipping_details\": \"Express Delivery\",\n    \"shipping_address\": \"ab\",\n    \"shipping_status\": \"ordered\",\n    \"delivered_to\": \"Mr Robin\",\n    \"shipping_charges\": 10,\n    \"packing_charge\": 10,\n    \"exchange_rate\": 1,\n    \"selling_price_group_id\": 5,\n    \"pay_term_number\": 17,\n    \"pay_term_type\": \"months\",\n    \"is_recurring\": 0,\n    \"recur_interval\": 3,\n    \"recur_interval_type\": \"days\",\n    \"subscription_repeat_on\": 7,\n    \"subscription_no\": \"omnis\",\n    \"recur_repetitions\": 1,\n    \"rp_redeemed\": 14,\n    \"rp_redeemed_amount\": 13.5,\n    \"types_of_service_id\": 14,\n    \"service_custom_field_1\": \"architecto\",\n    \"service_custom_field_2\": \"iure\",\n    \"service_custom_field_3\": \"qui\",\n    \"service_custom_field_4\": \"officiis\",\n    \"round_off_amount\": 37609372.71916,\n    \"table_id\": 14,\n    \"service_staff_id\": 10,\n    \"change_return\": 0,\n    \"change_return_id\": 19,\n    \"products\": [\n        {\n            \"sell_line_id\": 4,\n            \"product_id\": 17,\n            \"variation_id\": 58,\n            \"quantity\": 1,\n            \"unit_price\": 437.5,\n            \"tax_rate_id\": 11,\n            \"discount_amount\": 0,\n            \"discount_type\": \"percentage\",\n            \"sub_unit_id\": 14,\n            \"note\": \"et\"\n        }\n    ],\n    \"payments\": [\n        {\n            \"payment_id\": 9,\n            \"amount\": 453.13,\n            \"method\": \"cash\",\n            \"account_id\": 20,\n            \"card_number\": \"deleniti\",\n            \"card_holder_name\": \"in\",\n            \"card_transaction_number\": \"unde\",\n            \"card_type\": \"ipsam\",\n            \"card_month\": \"vero\",\n            \"card_year\": \"quo\",\n            \"card_security\": \"provident\",\n            \"transaction_no_1\": \"consequatur\",\n            \"transaction_no_2\": \"quae\",\n            \"transaction_no_3\": \"magni\",\n            \"note\": \"fuga\",\n            \"cheque_number\": \"commodi\",\n            \"bank_account_number\": \"ea\"\n        }\n    ]\n}"
                         },
                         "description": "",
                         "response": []
@@ -1725,14 +1725,14 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/sell\/:sell",
                             "query": [],
                             "variable": [
                                 {
                                     "id": "sell",
                                     "key": "sell",
-                                    "value": "aut",
+                                    "value": "et",
                                     "description": "id of the sell to be deleted"
                                 }
                             ]
@@ -1765,7 +1765,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/sell-return",
                             "query": []
                         },
@@ -1786,7 +1786,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"transaction_id\": 17,\n    \"transaction_date\": \"2020-5-7 15:20:22\",\n    \"invoice_no\": \"sit\",\n    \"discount_amount\": 10,\n    \"discount_type\": \"fixed\",\n    \"products\": [\n        {\n            \"sell_line_id\": 6,\n            \"quantity\": 1,\n            \"unit_price_inc_tax\": 437.5\n        }\n    ]\n}"
+                            "raw": "{\n    \"transaction_id\": 8,\n    \"transaction_date\": \"2020-5-7 15:20:22\",\n    \"invoice_no\": \"harum\",\n    \"discount_amount\": 10,\n    \"discount_type\": \"fixed\",\n    \"products\": [\n        {\n            \"sell_line_id\": 9,\n            \"quantity\": 1,\n            \"unit_price_inc_tax\": 437.5\n        }\n    ]\n}"
                         },
                         "description": "",
                         "response": []
@@ -1797,7 +1797,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/list-sell-return",
                             "query": []
                         },
@@ -1829,7 +1829,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/update-shipping-status",
                             "query": []
                         },
@@ -1850,7 +1850,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"id\": 18,\n    \"shipping_status\": \"ordered\",\n    \"delivered_to\": \"est\"\n}"
+                            "raw": "{\n    \"id\": 13,\n    \"shipping_status\": \"ordered\",\n    \"delivered_to\": \"aut\"\n}"
                         },
                         "description": "",
                         "response": []
@@ -1867,7 +1867,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/active-subscription",
                             "query": []
                         },
@@ -1899,7 +1899,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/packages",
                             "query": []
                         },
@@ -1937,12 +1937,12 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/table",
                             "query": [
                                 {
                                     "key": "location_id",
-                                    "value": "doloremque",
+                                    "value": "ut",
                                     "description": "int id of the location",
                                     "disabled": false
                                 }
@@ -1976,7 +1976,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/table\/:table",
                             "query": [],
                             "variable": [
@@ -2022,7 +2022,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/tax",
                             "query": []
                         },
@@ -2054,7 +2054,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/tax\/:tax",
                             "query": [],
                             "variable": [
@@ -2100,12 +2100,12 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/taxonomy",
                             "query": [
                                 {
                                     "key": "type",
-                                    "value": "fuga",
+                                    "value": "maiores",
                                     "description": "Type of taxonomy (product, device, hrm_department)",
                                     "disabled": false
                                 }
@@ -2139,7 +2139,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/taxonomy\/:taxonomy",
                             "query": [],
                             "variable": [
@@ -2185,7 +2185,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/types-of-service",
                             "query": []
                         },
@@ -2217,7 +2217,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/types-of-service\/:types_of_service",
                             "query": [],
                             "variable": [
@@ -2263,7 +2263,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/unit",
                             "query": []
                         },
@@ -2295,7 +2295,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/unit\/:unit",
                             "query": [],
                             "variable": [
@@ -2341,7 +2341,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/user\/loggedin",
                             "query": []
                         },
@@ -2373,12 +2373,12 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/user",
                             "query": [
                                 {
                                     "key": "service_staff",
-                                    "value": "quam",
+                                    "value": "nam",
                                     "description": "boolean Filter service staffs from users list (0, 1)",
                                     "disabled": false
                                 }
@@ -2412,7 +2412,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/user\/:user",
                             "query": [],
                             "variable": [
@@ -2452,7 +2452,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/update-password",
                             "query": []
                         },
@@ -2473,7 +2473,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"current_password\": \"id\",\n    \"new_password\": \"assumenda\"\n}"
+                            "raw": "{\n    \"current_password\": \"qui\",\n    \"new_password\": \"ut\"\n}"
                         },
                         "description": "",
                         "response": []
@@ -2490,7 +2490,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/payment-accounts",
                             "query": []
                         },
@@ -2522,7 +2522,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/payment-methods",
                             "query": []
                         },
@@ -2554,7 +2554,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/business-details",
                             "query": []
                         },
@@ -2586,12 +2586,12 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/profit-loss-report",
                             "query": [
                                 {
                                     "key": "location_id",
-                                    "value": "tempore",
+                                    "value": "voluptate",
                                     "description": "optional id of the location",
                                     "disabled": false
                                 },
@@ -2609,7 +2609,7 @@
                                 },
                                 {
                                     "key": "user_id",
-                                    "value": "illo",
+                                    "value": "in",
                                     "description": "optional id of the user",
                                     "disabled": false
                                 }
@@ -2643,7 +2643,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/product-stock-report",
                             "query": []
                         },
@@ -2675,7 +2675,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost\/UltimatePOS\/public",
+                            "host": "127.0.0.1:8000",
                             "path": "connector\/api\/notifications",
                             "query": []
                         },

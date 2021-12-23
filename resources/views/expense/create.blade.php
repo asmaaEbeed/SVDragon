@@ -9,7 +9,7 @@
 </section>
 
 <!-- Main content -->
-<section class="content">
+<section class="content mb-35">
 	{!! Form::open(['url' => action('ExpenseController@store'), 'method' => 'post', 'id' => 'add_expense_form', 'files' => true ]) !!}
 	<div class="box box-solid">
 		<div class="box-body">
@@ -129,7 +129,7 @@
 	</div>
 	@endcomponent
 	<div class="col-sm-12">
-		<button type="submit" class="btn btn-primary pull-right">@lang('messages.save')</button>
+		<button type="submit" class="btn btn-primary pull-right btn-transparent btn-min-width">@lang('messages.save')</button>
 	</div>
 {!! Form::close() !!}
 </section>

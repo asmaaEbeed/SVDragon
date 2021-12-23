@@ -16,7 +16,7 @@
     <div class="row no-print">
         <div class="col-md-3 col-md-offset-7 col-xs-6">
             <div class="input-group">
-                <span class="input-group-addon bg-light-blue"><i class="fa fa-map-marker"></i></span>
+                <span class="input-group-addon"><i class="fa fa-map-marker"></i></span>
                  <select class="form-control select2" id="profit_loss_location_filter">
                     @foreach($business_locations as $key => $value)
                         <option value="{{ $key }}">{{ $value }}</option>
@@ -27,7 +27,7 @@
         <div class="col-md-2 col-xs-6">
             <div class="form-group pull-right">
                 <div class="input-group">
-                  <button type="button" class="btn btn-primary" id="profit_loss_date_filter">
+                  <button type="button" class="btn btn-primary btn-transparent" id="profit_loss_date_filter">
                     <span>
                       <i class="fa fa-calendar"></i> {{ __('messages.filter_by_date') }}
                     </span>
@@ -45,7 +45,7 @@
 
     <div class="row no-print">
         <div class="col-sm-12">
-            <button type="button" class="btn btn-primary pull-right" 
+            <button type="button" class="btn btn-primary pull-right btn-transparent btn-min-width" 
             aria-label="Print" onclick="window.print();"
             ><i class="fa fa-print"></i> @lang( 'messages.print' )</button>
         </div>
@@ -55,7 +55,7 @@
         <div class="col-xs-12">
             <div class="form-group pull-right">
                 <div class="input-group">
-                  <button type="button" class="btn btn-primary" id="profit_tabs_filter">
+                  <button type="button" class="btn btn-primary btn-transparent" id="profit_tabs_filter">
                     <span>
                       <i class="fa fa-calendar"></i> {{ __('messages.filter_by_date') }}
                     </span>

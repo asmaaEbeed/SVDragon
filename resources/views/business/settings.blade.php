@@ -19,7 +19,7 @@
             <!--  <pos-tab-container> -->
             <div class="col-xs-12 pos-tab-container">
                 <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 pos-tab-menu">
-                    <div class="list-group">
+                    <div class="list-group list-group-transparent">
                         <a href="#" class="list-group-item text-center active">@lang('business.business')</a>
                         <a href="#" class="list-group-item text-center">@lang('business.tax') @show_tooltip(__('tooltip.business_tax'))</a>
                         <a href="#" class="list-group-item text-center">@lang('business.product')</a>
