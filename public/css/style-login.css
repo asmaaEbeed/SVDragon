@@ -147,15 +147,17 @@
     background-color: #fff !important
 }
 .right-col .login-form .btn-primary {
-    background: #AEDED9;
-    border-color: #AEDED9;
-    color: #444;
+    background: #AEDED9 !important;
+    border-color: #AEDED9 !important;
+    color: #444 !important;
     font-weight: 600;
     font-size: 15px;
+    transition: 0.3s all ease;
 }
 .right-col .login-form .btn-primary:hover {
-    background: #009cb8;
-    border-color: #009cb8;
+    background: #009cb8 !important;
+    border-color: #009cb8 !important;
+    color: #fff !important
 }
 .login-input-field{
     width: 70%;

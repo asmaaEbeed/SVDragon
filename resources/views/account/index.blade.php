@@ -58,7 +58,7 @@
                                         {!! Form::select('account_status', ['active' => __('business.is_active'), 'closed' => __('account.closed')], null, ['class' => 'form-control select2', 'style' => 'width:100%', 'id' => 'account_status']); !!}
                                     </div>
                                     <div class="col-md-8">
-                                        <button type="button" class="btn btn-primary btn-modal pull-right" 
+                                        <button type="button" class="btn btn-primary btn-modal pull-right btn-transparent" 
                                             data-container=".account_model"
                                             data-href="{{action('AccountController@create')}}">
                                             <i class="fa fa-plus"></i> @lang( 'messages.add' )</button>
@@ -105,7 +105,7 @@
                     <div class="tab-pane" id="account_types">
                         <div class="row">
                             <div class="col-md-12">
-                                <button type="button" class="btn btn-primary btn-modal pull-right" 
+                                <button type="button" class="btn btn-primary btn-modal pull-right btn-transparent" 
                                     data-href="{{action('AccountTypeController@create')}}"
                                     data-container="#account_type_modal">
                                     <i class="fa fa-plus"></i> @lang( 'messages.add' )</button>

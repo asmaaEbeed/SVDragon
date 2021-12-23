@@ -162,7 +162,7 @@
 <br>
 <div class="col-xs-12">
     @component('components.widget')
-        <h3 class="text-muted mb-0">
+        <h3 class="mb-0">
             {{ __('lang_v1.gross_profit') }}: 
             <span class="display_currency" data-currency_symbol="true">{{$data['gross_profit']}}</span>
         </h3>
@@ -173,7 +173,7 @@
             @endif
         </small>
 
-        <h3 class="text-muted mb-0">
+        <h3 class=" mb-0">
             {{ __('report.net_profit') }}: 
             <span class="display_currency" data-currency_symbol="true">{{$data['net_profit']}}</span>
         </h3>

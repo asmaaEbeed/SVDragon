@@ -53,7 +53,7 @@
     <div class="col-md-12">
     @component('components.widget')
         <table class="table">
-            <tr class="success">
+            <tr class="success success-transparent">
                 <th class="col-md-1">#</th>
                 <th class="col-md-4">@lang('lang_v1.modules')</th>
                 <th class="col-md-7">@lang('lang_v1.description')</th>
