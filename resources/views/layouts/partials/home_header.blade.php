@@ -10,7 +10,7 @@
       </button> -->--}}
       <a class="navbar-brand login-nav float-none" href="/">
       {{--<!-- {{config('app.name', 'ultimatePOS')}} -->--}}
-      <img src="{{asset('/img/logo.png')}}" alt="TheHub Logo" class="welcome-logo">
+      <img src="{{asset('/img/logo-horz.png')}}" alt="TheHub Logo" class="welcome-logo">
       </a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">

@@ -51,11 +51,12 @@
         @include('layouts.partials.home_header')
         <div class="video-background">
             <div class="video-wrap">
-                <div id="video">
+                <!-- <div id="video">
                     <video id="bgvid" autoplay="" loop="" muted="" playsinline="">
                         <source src="{{asset('/videos/the-hub-low.mp4')}}" type="video/mp4">
                     </video>
-                </div>
+                </div> -->
+                <img src="{{asset('/img/splash-bg.jpg')}}" alt="TheHub Logo" class="splash-bg">
             </div>
         </div>
         <div class="container">
